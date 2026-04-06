@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* 🎨 Main Dark Theme Colors */
+@theme {
+  /* Backgrounds */
+  --color-bg-primary: #0f172a;
+  --color-bg-secondary: #111827;
+  --color-bg-card: #1f2937;
+
+  /* Brand Colors */
+  --color-primary: #ef4444;
+  --color-secondary: #22c55e;
+  --color-accent: #f59e0b;
+
+  /* Text Colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #9ca3af;
+
+  /* UI Elements */
+  --color-border: #374151;
+  --color-ring: #f59e0b; /* Match accent */
+}
+
+/* 🌍 System Variables & Shadcn Sync */
+:root {
+  /* Map your theme to Shadcn variables so components match automatically */
+  --background: #0f172a; /* bg-primary */
+  --foreground: #ffffff; /* text-primary */
+
+  --card: #1f2937; /* bg-card */
+  --card-foreground: #ffffff;
+
+  --popover: #111827;
+  --popover-foreground: #ffffff;
+
+  --primary: #ef4444; /* brand primary */
+  --primary-foreground: #ffffff;
+
+  --secondary: #22c55e; /* brand secondary */
+  --secondary-foreground: #ffffff;
+
+  --muted: #1f2937;
+  --muted-foreground: #9ca3af;
+
+  --accent: #f59e0b; /* brand accent */
+  --accent-foreground: #000000;
+
+  --destructive: #7f1d1d;
+  --destructive-foreground: #ffffff;
+
+  --border: #374151;
+  --input: #374151;
+  --ring: #f59e0b;
+
+  --radius: 0.75rem;
+}
+
+/* 🌍 Base Styles */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    /* Use your custom Navy variable directly for safety */
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* 🛠️ Tailwind v4 Inline Theme Bridge */
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: var(--font-sans);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
