@@ -92,3 +92,5 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) * 1.4);
 }
+
+/* above like css file  */
