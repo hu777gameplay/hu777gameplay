@@ -42,7 +42,7 @@ export default function ReviewsAndComparison() {
 
       <div className="bg-bg-card rounded-2xl border border-border shadow-2xl overflow-hidden">
         <div className="p-6 border-b border-border">
-          <h2 className="text-xl md:text-2xl font-bold text-white">
+          <h2 className="text-xl md:text-2xl font-bold text-black">
             HU777 vs Other Gaming Apps
           </h2>
         </div>
@@ -93,7 +93,7 @@ export default function ReviewsAndComparison() {
                   <td className="px-6 py-4 text-text-secondary font-medium">
                     {row.feature}
                   </td>
-                  <td className="px-6 py-4 font-bold text-white">{row.hu}</td>
+                  <td className="px-6 py-4 font-bold text-black">{row.hu}</td>
                   <td className="px-6 py-4 text-text-secondary">{row.other}</td>
                 </tr>
               ))}

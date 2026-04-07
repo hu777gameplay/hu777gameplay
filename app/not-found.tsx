@@ -5,7 +5,7 @@ export default function NotFound() {
     <div className="bg-background min-h-screen flex flex-col items-center justify-center px-6 text-center">
       {/* Visual Element: Large Glowing 404 */}
       <div className="relative">
-        <h1 className="text-[12rem] md:text-[15rem] font-black text-white/5 leading-none select-none">
+        <h1 className="text-[12rem] md:text-[15rem] font-black text-black/5 leading-none select-none">
           404
         </h1>
         <div className="absolute inset-0 flex flex-col items-center justify-center"></div>
@@ -29,7 +29,7 @@ export default function NotFound() {
 
           <Link
             href="/"
-            className="bg-primary hover:bg-red-600 text-white font-black py-4 px-8 rounded-md shadow-[0_10px_20px_rgba(239,68,68,0.3)] transition-all hover:-translate-y-1 active:scale-95"
+            className="bg-primary hover:bg-red-600 text-black font-black py-4 px-8 rounded-md shadow-[0_10px_20px_rgba(239,68,68,0.3)] transition-all hover:-translate-y-1 active:scale-95"
           >
             GO TO GAME LOBBY
           </Link>

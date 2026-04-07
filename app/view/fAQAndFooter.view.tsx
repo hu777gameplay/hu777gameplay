@@ -4,7 +4,7 @@ export default function FAQAndFooter() {
   return (
     <section className="space-y-10 pb-10">
       <div className="bg-bg-card p-6 rounded-2xl border border-border shadow-xl">
-        <h2 className="text-xl md:text-2xl font-bold mb-6 text-white border-b border-border pb-3 flex items-center gap-2">
+        <h2 className="text-xl md:text-2xl font-bold mb-6 text-black border-b border-border pb-3 flex items-center gap-2">
           <span className="text-primary">?</span> FAQs – HU777 Game APK 2026
         </h2>
 
@@ -33,9 +33,9 @@ export default function FAQAndFooter() {
         <div className="space-y-4 text-sm md:text-base leading-relaxed">
           <p className="text-text-secondary">
             This game involves{" "}
-            <strong className="text-white">financial risk</strong> and may be
+            <strong className="text-black">financial risk</strong> and may be
             addictive. Play responsibly and at your own risk. Strictly for users{" "}
-            <strong className="text-white underline decoration-primary">
+            <strong className="text-black underline decoration-primary">
               18+ only
             </strong>
             .

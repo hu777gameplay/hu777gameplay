@@ -44,12 +44,12 @@ export default function BlogDetailController({
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-black leading-tight text-white mb-6">
+          <h1 className="text-4xl md:text-5xl font-black leading-tight text-black mb-6">
             {post.title}
           </h1>
 
           <div className="flex items-center gap-3 text-sm text-muted-foreground">
-            <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xs shadow-lg">
+            <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-black font-bold text-xs shadow-lg">
               {post.author.charAt(0)}
             </div>
             <span>
@@ -71,7 +71,7 @@ export default function BlogDetailController({
         />
 
         <footer className="mt-12 py-8 bg-card rounded-[--radius] border border-border p-8 text-center">
-          <h3 className="text-xl font-black text-white mb-2">
+          <h3 className="text-xl font-black text-black mb-2">
             Ready to Start Winning?
           </h3>
           <p className="text-muted-foreground text-sm mb-6">
@@ -81,7 +81,7 @@ export default function BlogDetailController({
           <Link
             href={inviteLink}
             rel="noopener noreferrer"
-            className="inline-block bg-primary hover:bg-red-600 text-white font-black py-4 px-10 rounded-md transition-all shadow-[0_5px_15px_rgba(239,68,68,0.3)] hover:-translate-y-1 active:scale-95"
+            className="inline-block bg-primary hover:bg-red-600 text-black font-black py-4 px-10 rounded-md transition-all shadow-[0_5px_15px_rgba(239,68,68,0.3)] hover:-translate-y-1 active:scale-95"
           >
             GET THE APP NOW
           </Link>

@@ -10,7 +10,7 @@ const PrivacyPolicyController = () => {
   return (
     <main className="bg-bg-primary min-h-screen text-text-primary font-sans pb-16 selection:bg-primary/30">
       <div className="max-w-4xl mx-auto px-4 py-10">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-10 text-white uppercase tracking-tighter drop-shadow-sm">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-10 text-black uppercase tracking-tighter drop-shadow-sm">
           Privacy Policy – HU777 APK DOWNLOAD
         </h1>
 
@@ -32,7 +32,7 @@ const PrivacyPolicyController = () => {
           <Link
             href={inviteLink}
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-black py-4 px-12 rounded-xl shadow-[0_10px_20px_rgba(6,182,212,0.3)] hover:shadow-[0_15px_30px_rgba(6,182,212,0.4)] hover:-translate-y-1 active:translate-y-0 transition-all uppercase tracking-widest text-sm text-center"
+            className="bg-gradient-to-r from-cyan-500 to-blue-600 text-black font-black py-4 px-12 rounded-xl shadow-[0_10px_20px_rgba(6,182,212,0.3)] hover:shadow-[0_15px_30px_rgba(6,182,212,0.4)] hover:-translate-y-1 active:translate-y-0 transition-all uppercase tracking-widest text-sm text-center"
           >
             DOWNLOAD NOW
           </Link>
@@ -46,7 +46,7 @@ const PrivacyPolicyController = () => {
           </h2>
           <p className="text-xs text-center text-text-secondary mb-4 uppercase tracking-widest font-bold opacity-70">
             Last Updated:{" "}
-            <span className="text-white font-mono">
+            <span className="text-black font-mono">
               {privacyData.lastUpdated}
             </span>
           </p>
@@ -63,7 +63,7 @@ const PrivacyPolicyController = () => {
               key={index}
               className="bg-bg-card border border-border rounded-2xl p-7 shadow-lg hover:border-primary/30 transition-all duration-300 group"
             >
-              <h2 className="text-xl font-bold text-white mb-5 flex items-center gap-3 group-hover:text-primary transition-colors">
+              <h2 className="text-xl font-bold text-black mb-5 flex items-center gap-3 group-hover:text-primary transition-colors">
                 <span className="w-1.5 h-7 bg-primary rounded-full inline-block shadow-[0_0_10px_rgba(239,68,68,0.5)]"></span>
                 {section.title}
               </h2>
@@ -97,7 +97,7 @@ const PrivacyPolicyController = () => {
                 )}
 
                 {section.subTitle && (
-                  <h3 className="text-md font-bold text-white mt-6 border-l-4 border-accent pl-4 py-1 bg-accent/5 rounded-r-lg">
+                  <h3 className="text-md font-bold text-black mt-6 border-l-4 border-accent pl-4 py-1 bg-accent/5 rounded-r-lg">
                     {section.subTitle}
                   </h3>
                 )}
@@ -121,7 +121,7 @@ const PrivacyPolicyController = () => {
         </div>
 
         <footer className="mt-16 bg-bg-card p-8 rounded-2xl border border-border shadow-2xl relative">
-          <h3 className="font-black mb-6 text-white border-b border-border pb-3 uppercase text-xs tracking-[0.2em]">
+          <h3 className="font-black mb-6 text-black border-b border-border pb-3 uppercase text-xs tracking-[0.2em]">
             Quick Navigation
           </h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-5 text-sm text-accent">

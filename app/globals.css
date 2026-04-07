@@ -7,9 +7,9 @@
 /* 🎨 Main Dark Theme Colors */
 @theme {
   /* Backgrounds */
-  --color-bg-primary: #0f172a;
-  --color-bg-secondary: #111827;
-  --color-bg-card: #1f2937;
+  --color-bg-primary: white;
+  --color-bg-secondary: white;
+  --color-bg-card: white;
 
   /* Brand Colors */
   --color-primary: #ef4444;
@@ -17,8 +17,8 @@
   --color-accent: #f59e0b;
 
   /* Text Colors */
-  --color-text-primary: #ffffff;
-  --color-text-secondary: #9ca3af;
+  --color-text-primary: black;
+  --color-text-secondary: black;
 
   /* UI Elements */
   --color-border: #374151;
@@ -28,11 +28,11 @@
 /* 🌍 System Variables & Shadcn Sync */
 :root {
   /* Map your theme to Shadcn variables so components match automatically */
-  --background: #0f172a; /* bg-primary */
-  --foreground: #ffffff; /* text-primary */
+  --background: white; /* bg-primary */
+  --foreground: black; /* text-primary */
 
-  --card: #1f2937; /* bg-card */
-  --card-foreground: #ffffff;
+  --card: white; /* bg-card */
+  --card-foreground: black;
 
   --popover: #111827;
   --popover-foreground: #ffffff;

@@ -27,21 +27,21 @@ const AboutController = () => {
           <div className="flex flex-col w-full max-w-sm gap-4">
             <Link
               href=" https://invite.hu777.club/?code=DU7ITHS"
-              className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all text-center"
+              className="bg-gradient-to-r from-orange-500 to-yellow-500 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all text-center"
             >
               👉 DOWNLOAD HU777 APK (OFFICIAL)
             </Link>
 
             <Link
               href=" https://invite.ka9.club/?code=92B0VMS"
-              className="bg-emerald-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all text-center"
+              className="bg-emerald-500 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all text-center"
             >
               🚀 KA9 GAME SAFE AND FAST
             </Link>
 
             <Link
               href=" https://invite.yygame77.com/?code=PZC4FVS"
-              className="bg-gradient-to-r from-blue-500 to-cyan-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all uppercase tracking-wider text-center"
+              className="bg-gradient-to-r from-blue-500 to-cyan-600 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all uppercase tracking-wider text-center"
             >
               💎 YYGAME BET3880 DOWNLOAD
             </Link>
@@ -54,7 +54,7 @@ const AboutController = () => {
               key={index}
               className="bg-bg-card border border-border rounded-2xl p-6 shadow-xl hover:border-primary/20 transition-colors"
             >
-              <h2 className="text-xl font-bold text-white mb-4 border-b border-border pb-3 flex items-center gap-2">
+              <h2 className="text-xl font-bold text-black mb-4 border-b border-border pb-3 flex items-center gap-2">
                 <span className="w-1.5 h-6 bg-primary rounded-full"></span>
                 {section.title}
               </h2>

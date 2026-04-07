@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="text-center space-y-6 pt-6">
-      <h1 className="text-3xl md:text-5xl font-extrabold text-white drop-shadow-md">
+      <h1 className="text-3xl md:text-5xl font-extrabold text-black drop-shadow-md">
         {HERO_DATA.title}
       </h1>
 
@@ -25,7 +25,7 @@ export default function HeroSection() {
           <Link
             key={index}
             href={btn.link}
-            className={`w-full max-w-md py-4 px-6 rounded-xl font-bold text-white text-center transition-all duration-300 shadow-lg ${
+            className={`w-full max-w-md py-4 px-6 rounded-xl font-bold text-black text-center transition-all duration-300 shadow-lg ${
               btn.style === "primary"
                 ? "bg-gradient-to-r from-orange-500 to-yellow-500 hover:scale-105 active:scale-95"
                 : btn.style === "secondary"

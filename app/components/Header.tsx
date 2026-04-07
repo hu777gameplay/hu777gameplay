@@ -38,7 +38,7 @@ export default function Header() {
               height={36}
               className="rounded-md transition-transform group-hover:scale-110"
             />
-            <span className="font-bold text-white tracking-tight">HU777</span>
+            <span className="font-bold text-black tracking-tight">HU777</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
@@ -52,7 +52,7 @@ export default function Header() {
                   className={`transition-all duration-300 ease-in-out ${
                     isActive
                       ? "text-accent drop-shadow-[0_0_8px_rgba(245,158,11,0.4)]"
-                      : "text-text-secondary hover:text-white"
+                      : "text-text-secondary hover:text-black"
                   }`}
                 >
                   {item.name}
@@ -64,7 +64,7 @@ export default function Header() {
           <div className="md:hidden">
             <Drawer direction="right">
               <DrawerTrigger asChild>
-                <button className="p-2 rounded-md hover:bg-bg-card text-white transition-colors">
+                <button className="p-2 rounded-md hover:bg-bg-card text-black transition-colors">
                   <Menu size={26} />
                 </button>
               </DrawerTrigger>
@@ -80,7 +80,7 @@ export default function Header() {
                         height={32}
                         className="rounded-md"
                       />
-                      <span className="font-bold text-white text-lg">
+                      <span className="font-bold text-black text-lg">
                         HU777 Menu
                       </span>
                     </div>
@@ -97,7 +97,7 @@ export default function Header() {
                             className={`block px-4 py-3 rounded-xl font-medium transition-all duration-300 ${
                               isActive
                                 ? "text-accent bg-bg-card"
-                                : "text-text-secondary hover:text-white hover:bg-bg-card"
+                                : "text-text-secondary hover:text-black hover:bg-bg-card"
                             }`}
                           >
                             {item.name}
@@ -110,7 +110,7 @@ export default function Header() {
                   <DrawerClose asChild>
                     <Link
                       href="https://invite.hu777.club/?code=DU7ITHS"
-                      className="mt-auto bg-gradient-to-r from-red-600 to-yellow-500 text-white px-4 py-4 rounded-2xl text-center font-bold shadow-lg hover:brightness-110 active:scale-95 transition-all uppercase tracking-widest text-xs"
+                      className="mt-auto bg-gradient-to-r from-red-600 to-yellow-500 text-black px-4 py-4 rounded-2xl text-center font-bold shadow-lg hover:brightness-110 active:scale-95 transition-all uppercase tracking-widest text-xs"
                     >
                       Download APK
                     </Link>

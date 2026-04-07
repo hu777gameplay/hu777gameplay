@@ -4,7 +4,7 @@ export default function FeaturesAndGuides() {
   return (
     <section className="space-y-10">
       <div className="bg-bg-card p-6 rounded-2xl border border-border shadow-lg hover:border-primary/20 transition-all">
-        <h2 className="text-xl md:text-2xl font-bold mb-4 text-white border-b border-border pb-3">
+        <h2 className="text-xl md:text-2xl font-bold mb-4 text-black border-b border-border pb-3">
           What is HU777 Game?
         </h2>
         <p className="text-text-secondary leading-relaxed text-sm md:text-base">
@@ -15,7 +15,7 @@ export default function FeaturesAndGuides() {
       </div>
 
       <div className="bg-bg-card p-6 rounded-2xl border border-border shadow-lg hover:border-primary/20 transition-all">
-        <h2 className="text-xl md:text-2xl font-bold mb-4 text-white border-b border-border pb-3">
+        <h2 className="text-xl md:text-2xl font-bold mb-4 text-black border-b border-border pb-3">
           Why Choose HU777 Game 2026?
         </h2>
 
@@ -28,7 +28,7 @@ export default function FeaturesAndGuides() {
               <span className="text-emerald-500 bg-emerald-500/10 p-1 rounded-full group-hover:scale-110 transition-transform">
                 ✔
               </span>
-              <span className="group-hover:text-white transition-colors">
+              <span className="group-hover:text-black transition-colors">
                 {item}
               </span>
             </li>
@@ -37,7 +37,7 @@ export default function FeaturesAndGuides() {
       </div>
 
       <div className="bg-bg-card p-6 rounded-2xl border border-border shadow-lg hover:border-primary/20 transition-all">
-        <h2 className="text-xl md:text-2xl font-bold mb-4 text-white border-b border-border pb-3">
+        <h2 className="text-xl md:text-2xl font-bold mb-4 text-black border-b border-border pb-3">
           How to Download & Play
         </h2>
 
@@ -54,10 +54,10 @@ export default function FeaturesAndGuides() {
               key={index}
               className="flex gap-4 text-text-secondary text-sm md:text-base group"
             >
-              <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-primary/10 text-primary font-bold rounded-full border border-primary/20 group-hover:bg-primary group-hover:text-white transition-all">
+              <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-primary/10 text-primary font-bold rounded-full border border-primary/20 group-hover:bg-primary group-hover:text-black transition-all">
                 {index + 1}
               </span>
-              <span className="pt-1 group-hover:text-white transition-colors leading-relaxed">
+              <span className="pt-1 group-hover:text-black transition-colors leading-relaxed">
                 {step}
               </span>
             </li>

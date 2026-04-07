@@ -54,7 +54,7 @@ export const HERO_DATA = {
   buttons: [
     {
       text: "👉 DOWNLOAD HU777 APK (OFFICIAL)",
-      link: "https://invite.hu777.club/?code=DU7ITHS",
+      link: "https://invite.hu777.club/?code=DU7ITHZ",
       style: "primary",
     },
     {
