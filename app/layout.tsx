@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 /* ✅ Proper typed metadata */
 export const metadata: Metadata = {
-  metadataBase: new URL("https://playhu777games.com"),
+  metadataBase: new URL("https://hu777gameplay.com"),
   title: {
     default:
       "HU777 Games – Official HU777 Guide, APK Download & Login Information",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "HU777 Games – Official HU777 Guide",
     description:
       "Complete guide for HU777 Games including APK download, login instructions, and latest updates.",
-    url: "https://playhu777games.com",
+    url: "https://hu777gameplay.com",
     siteName: "HU777 Games",
     type: "website",
     locale: "en_US",
