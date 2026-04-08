@@ -1,7 +1,7 @@
 export const FAQ_DATA = [
   {
     question: "Q1. Is HU777 Game safe?",
-    answer: "Yes, safe for entertainment; play responsibly.",
+    answewrwerewer: "Yes, safe for entertainment; play responsibly.",
   },
   {
     question: "Q2. Does HU777 Game provide a signup bonus?",
@@ -54,7 +54,7 @@ export const HERO_DATA = {
   buttons: [
     {
       text: "👉 DOWNLOAD HU777 APK (OFFICIAL)",
-      link: "https://invite.hu777.club/?code=DU7ITHZ",
+      link: "https://invite.hu777.club/?code=WXFJ5NS",
       style: "primary",
     },
     {
