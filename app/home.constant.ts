@@ -58,7 +58,7 @@ export const HERO_DATA = {
       style: "secondary",
     },
     {
-      text: "💎 IN7 Game – Latest Download Link",
+      text: "💎 IND9 App – Download & Play",
       link: "https://share.ind9.app/web/share/index.html?ic=AAW01MCP&ts=1776184500&m=2&lang=en&id=1",
       style: "accent",
     },
