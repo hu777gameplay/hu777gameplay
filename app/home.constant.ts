@@ -53,19 +53,19 @@ export const HERO_DATA = {
     "HU777 Game APK Download 2026 – Play Real Cash Games & Fantasy Cricket",
   buttons: [
     {
-      text: "👉 DOWNLOAD HU777 APK (OFFICIAL)",
-      link: "https://invite.hu777.club/?code=WXFJ5NS",
-      style: "primary",
-    },
-    {
       text: "🚀 KA9 GAME SAFE AND FAST",
-      link: "https://invite.ka9.club/?code=92B0VMS",
+      link: "https://acc.in7game.org/api/web/share/index.html?ic=AA0MCX3K&ts=1776138720&m=2&lang=en&id=1",
       style: "secondary",
     },
     {
       text: "💎 YYGAME BET3880 DOWNLOAD",
-      link: "https://invite.yygame77.com/?code=PZC4FVS",
+      link: "https://acc.in7game.org/api/web/share/index.html?ic=AA0MCX3K&ts=1776138720&m=2&lang=en&id=1",
       style: "accent",
+    },
+    {
+      text: "👉 DOWNLOAD HU777 APK (OFFICIAL)",
+      link: "https://invite.hu777.club/?code=WXFJ5NS",
+      style: "primary",
     },
   ],
 };
