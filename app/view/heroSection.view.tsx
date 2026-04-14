@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../public/images/logo.jpg";
+import logo from "../../public/images/logo.jpeg";
 import { HERO_DATA } from "../home.constant";
 import Link from "next/link";
 

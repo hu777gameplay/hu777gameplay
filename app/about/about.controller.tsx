@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../public/images/logo.jpg";
+import logo from "../../public/images/logo.jpeg";
 import { aboutData } from "./abount.constant";
 import { routes } from "../untils/RouteEndPoint";
 import Link from "next/link";
@@ -26,24 +26,24 @@ const AboutController = () => {
 
           <div className="flex flex-col w-full max-w-sm gap-4">
             <Link
-              href=" https://invite.hu777.club/?code=DU7ITHS"
-              className="bg-gradient-to-r from-orange-500 to-yellow-500 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all text-center"
-            >
-              👉 DOWNLOAD HU777 APK (OFFICIAL)
-            </Link>
-
-            <Link
-              href=" https://invite.ka9.club/?code=92B0VMS"
+              href="https://acc.in7game.org/api/web/share/index.html?ic=AA0MCX3K&ts=1776184440&m=2&lang=en&id=1"
               className="bg-emerald-500 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all text-center"
             >
-              🚀 KA9 GAME SAFE AND FAST
+              🚀 IN7 Game – Official Access Link
             </Link>
 
             <Link
-              href=" https://invite.yygame77.com/?code=PZC4FVS"
+              href="https://share.ind9.app/web/share/index.html?ic=AAW01MCP&ts=1776184500&m=2&lang=en&id=1"
               className="bg-gradient-to-r from-blue-500 to-cyan-600 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all uppercase tracking-wider text-center"
             >
-              💎 YYGAME BET3880 DOWNLOAD
+              💎 IND9 App – Download & Play
+            </Link>
+
+            <Link
+              href="https://invite.hu777.club/?code=DU7ITHS"
+              className="bg-gradient-to-r from-orange-500 to-yellow-500 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all text-center"
+            >
+              👉 HU777 Club – Official APK Download
             </Link>
           </div>
         </div>

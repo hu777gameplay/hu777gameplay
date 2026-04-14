@@ -3,7 +3,7 @@ import { disclaimerData } from "./disclaimer.constant";
 import { routes } from "../untils/RouteEndPoint";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/images/logo.jpg";
+import logo from "../../public/images/logo.jpeg";
 
 const DisclaimerController = () => {
   const inviteLink = "https://invite.hu777.club/?code=DU7ITHS";

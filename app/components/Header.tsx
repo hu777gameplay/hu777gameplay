@@ -7,7 +7,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 import { routes } from "../untils/RouteEndPoint";
-import logo from "../../public/images/logo.jpg";
+import logo from "../../public/images/logo.jpeg";
 import {
   Drawer,
   DrawerClose,
