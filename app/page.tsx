@@ -5,7 +5,7 @@ const Home = () => {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "HU777 Games",
-    url: "https://rummy-swart.vercel.app",
+    url: "https://www.hu777gameplay.com",
   };
 
   return (
