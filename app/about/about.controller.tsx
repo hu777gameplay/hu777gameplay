@@ -33,10 +33,10 @@ const AboutController = () => {
             </Link>
 
             <Link
-              href="https://share.ind9.app/web/share/index.html?ic=AAW01MCP&ts=1776184500&m=2&lang=en&id=1"
+              href="https://invite.ka9.club/?code=92B0VMS"
               className="bg-gradient-to-r from-blue-500 to-cyan-600 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all uppercase tracking-wider text-center"
             >
-              💎 IND9 App – Download & Play
+              💎 KA9 App – Download & Play
             </Link>
 
             <Link

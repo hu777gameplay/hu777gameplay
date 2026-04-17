@@ -54,17 +54,17 @@ export const HERO_DATA = {
   buttons: [
     {
       text: "🚀 IN7 Game – Play Now (Fast Access)",
-      link: "https://acc.in7game.org/api/web/share/index.html?ic=AA0MCX3K&ts=1776138720&m=2&lang=en&id=1",
+      link: "https://acc.in7game.org/api/web/share/index.html?ic=AD0KL5A2&ts=1776447720&m=2&lang=en&id=1",
       style: "secondary",
     },
     {
-      text: "💎 IND9 App – Download & Play",
-      link: "https://share.ind9.app/web/share/index.html?ic=AAW01MCP&ts=1776184500&m=2&lang=en&id=1",
+      text: "💎 KA9 App – Download & Play",
+      link: "https://invite.ka9.club/?code=92B0VMS",
       style: "accent",
     },
     {
       text: "👉 HU777 Club – Secure APK Download",
-      link: "https://invite.hu777.club/?code=WXFJ5NS",
+      link: "https://invite.hu777.club/?code=DU7ITHS",
       style: "primary",
     },
   ],
