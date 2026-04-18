@@ -1,30 +1,28 @@
+import { blogPosts, pages, siteConfig } from "@/lib/data";
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: "https://www.hu777gameplay.com",
+  const sitemapEntries: MetadataRoute.Sitemap = [];
+
+  // Add all pages from data
+  Object.values(pages).forEach((page) => {
+    sitemapEntries.push({
+      url: `${siteConfig.url}${page.url}`,
       lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 1,
-    },
-    {
-      url: "https://www.hu777gameplay.com/about",
-      lastModified: new Date(),
+      changeFrequency: page.url === "/" ? "daily" : "weekly",
+      priority: page.url === "/" ? 1 : 0.8,
+    });
+  });
+
+  // Add blog posts
+  blogPosts.forEach((post) => {
+    sitemapEntries.push({
+      url: `${siteConfig.url}/blog/${post.slug}`,
+      lastModified: new Date(post.date),
       changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: "https://www.hu777gameplay.com/contact",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://www.hu777gameplay.com/blog",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-  ];
+      priority: 0.6,
+    });
+  });
+
+  return sitemapEntries;
 }

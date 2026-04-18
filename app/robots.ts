@@ -1,3 +1,4 @@
+import { siteConfig } from "@/lib/data";
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
@@ -6,9 +7,10 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        disallow: ["/admin/", "/api/private/"],
       },
     ],
-    sitemap: "https://www.hu777gameplay.com/sitemap.xml",
-    host: "https://www.hu777gameplay.com",
+    sitemap: `${siteConfig.url}/sitemap.xml`,
+    host: siteConfig.url,
   };
 }

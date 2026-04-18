@@ -2,29 +2,40 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import Link from "next/link";
-import Image from "next/image";
-import { usePathname } from "next/navigation";
-import { Menu } from "lucide-react";
-import { routes } from "../untils/RouteEndPoint";
-import logo from "../../public/images/logo.jpeg";
+import { Button } from "@/components/ui/button";
 import {
   Drawer,
   DrawerClose,
   DrawerContent,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import { useAuth } from "@/lib/auth";
+import { Menu, User } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import logo from "../../public/images/logo.jpeg";
+import { routes } from "../untils/RouteEndPoint";
 
-export default function Header() {
+interface HeaderProps {
+  navigationLinks?: { name: string; href: string }[];
+}
+
+export default function Header({ navigationLinks }: HeaderProps = {}) {
   const pathname = usePathname();
+  const { user } = useAuth();
 
-  const navLinks = [
+  const defaultNavLinks = [
     { name: "Home", path: routes.HOME },
     { name: "About", path: routes.ABOUT },
     { name: "Blog", path: routes.BLOG },
     { name: "Disclaimer", path: routes.DISCLAIMER },
     { name: "Privacy Policy", path: routes.PRIVACY_POLICY },
   ];
+
+  const navLinks = navigationLinks
+    ? navigationLinks.map((link) => ({ name: link.name, path: link.href }))
+    : defaultNavLinks;
 
   return (
     <header className="w-full border-b border-border bg-bg-primary sticky top-0 z-50">
@@ -60,6 +71,29 @@ export default function Header() {
               );
             })}
           </nav>
+
+          {/* Auth Section - Desktop */}
+          <div className="hidden md:flex items-center gap-4">
+            {user ? (
+              <div className="flex items-center gap-2">
+                <Button asChild variant="outline" size="sm">
+                  <Link href="/profile" className="flex items-center gap-2">
+                    <User className="h-4 w-4" />
+                    Profile
+                  </Link>
+                </Button>
+              </div>
+            ) : (
+              <div className="flex items-center gap-2">
+                <Button asChild variant="outline" size="sm">
+                  <Link href="/login">Login</Link>
+                </Button>
+                <Button asChild size="sm">
+                  <Link href="/register">Register</Link>
+                </Button>
+              </div>
+            )}
+          </div>
 
           <div className="md:hidden">
             <Drawer direction="right">
@@ -105,6 +139,43 @@ export default function Header() {
                         </DrawerClose>
                       );
                     })}
+
+                    {/* Auth Section - Mobile */}
+                    <div className="border-t border-border pt-4 mt-4">
+                      {user ? (
+                        <div className="space-y-2">
+                          <DrawerClose asChild>
+                            <Button
+                              asChild
+                              variant="outline"
+                              className="w-full flex items-center gap-2"
+                            >
+                              <Link href="/profile">
+                                <User className="h-4 w-4" />
+                                Profile
+                              </Link>
+                            </Button>
+                          </DrawerClose>
+                        </div>
+                      ) : (
+                        <div className="space-y-2">
+                          <DrawerClose asChild>
+                            <Button
+                              asChild
+                              variant="outline"
+                              className="w-full"
+                            >
+                              <Link href="/login">Login</Link>
+                            </Button>
+                          </DrawerClose>
+                          <DrawerClose asChild>
+                            <Button asChild className="w-full">
+                              <Link href="/register">Register</Link>
+                            </Button>
+                          </DrawerClose>
+                        </div>
+                      )}
+                    </div>
                   </div>
 
                   <DrawerClose asChild>

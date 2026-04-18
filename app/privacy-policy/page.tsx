@@ -1,4 +1,3 @@
-import React from "react";
 import PrivacyPolicyController from "./privacyPolicy.controller";
 
 const PrivacyPolicy = () => {

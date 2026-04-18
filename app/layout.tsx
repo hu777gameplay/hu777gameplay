@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import ScrollToTop from "@/components/ui/scrollToTop";
+import { AuthProvider } from "@/lib/auth";
+import { Analytics } from "@vercel/analytics/next";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -132,10 +133,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Analytics />
-        <Header />
-        {children}
-        <ScrollToTop />
-        <Footer />
+        <AuthProvider>
+          <Header />
+          {children}
+          <ScrollToTop />
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );

@@ -1,4 +1,3 @@
-import React from "react";
 import { disclaimerData } from "./disclaimer.constant";
 import { routes } from "../untils/RouteEndPoint";
 import Link from "next/link";

@@ -1,4 +1,3 @@
-import React from "react";
 import HeroSection from "./view/heroSection.view";
 import FeaturesAndGuides from "./view/featuresAndGuides.view";
 import ReviewsAndComparison from "./view/reviewsAndComparison.view";

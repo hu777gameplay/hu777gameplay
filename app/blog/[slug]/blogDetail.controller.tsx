@@ -1,96 +1,181 @@
-import { blogData } from "../blog.constant";
-import { notFound } from "next/navigation";
+import { blogPosts, navigationLinks } from "@/lib/data";
 import Link from "next/link";
+import { notFound } from "next/navigation";
+
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { ArrowLeft, Calendar, Share2, Tag, User } from "lucide-react";
 
 export default function BlogDetailController({
   params,
 }: {
   params: { slug: string };
 }) {
-  const post = blogData.find((b) => b.slug === params.slug);
-
-  const inviteLink = "https://invite.hu777.club/?code=DU7ITHS";
+  const post = blogPosts.find((b) => b.slug === params.slug);
 
   if (!post) {
     notFound();
   }
 
+  // Get related posts (same tags)
+  const relatedPosts = blogPosts
+    .filter(
+      (p) =>
+        p.slug !== post.slug &&
+        p.tags.some((tag: string) => post.tags.includes(tag)),
+    )
+    .slice(0, 3);
+
   return (
-    <div className="bg-background min-h-screen text-foreground selection:bg-primary/20">
-      {/* Simple Navigation */}
-      <nav className="border-b border-border py-4 px-6">
-        <div className="max-w-3xl mx-auto flex justify-between items-center">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100">
+      <main className="container mx-auto px-4 py-8">
+        {/* Breadcrumb */}
+        <nav className="mb-8">
           <Link
             href="/blog"
-            className="text-xs font-bold text-muted-foreground hover:text-accent uppercase tracking-widest transition-colors"
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
           >
-            ← Back to Blog
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Blog
           </Link>
-          <span className="text-[10px] text-primary font-black uppercase tracking-tighter italic">
-            HU777 Official
-          </span>
-        </div>
-      </nav>
+        </nav>
 
-      <main className="max-w-3xl mx-auto py-12 md:py-20 px-6">
-        {/* Header Section */}
-        <header className="mb-12">
-          <div className="flex items-center gap-2 mb-4">
-            <span className="text-[10px] bg-muted px-2 py-0.5 rounded text-accent font-bold uppercase">
-              {post.category}
-            </span>
-            <span className="text-[10px] text-muted-foreground">
-              • {post.date}
-            </span>
+        {/* Article Header */}
+        <header className="max-w-4xl mx-auto mb-12">
+          <div className="flex flex-wrap items-center gap-2 mb-4">
+            {post.tags.map((tag: string) => (
+              <Badge key={tag} variant="secondary">
+                <Tag className="mr-1 h-3 w-3" />
+                {tag}
+              </Badge>
+            ))}
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-black leading-tight text-black mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             {post.title}
           </h1>
 
-          <div className="flex items-center gap-3 text-sm text-muted-foreground">
-            <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-black font-bold text-xs shadow-lg">
-              {post.author.charAt(0)}
+          <div className="flex items-center gap-6 text-gray-600 mb-8">
+            <div className="flex items-center gap-2">
+              <User className="h-5 w-5" />
+              <span className="font-medium">{post.author}</span>
             </div>
-            <span>
-              Published by{" "}
-              <span className="text-foreground font-bold">{post.author}</span>
-            </span>
+            <div className="flex items-center gap-2">
+              <Calendar className="h-5 w-5" />
+              <span>
+                {new Date(post.date).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </span>
+            </div>
           </div>
+
+          <p className="text-xl text-gray-700 leading-relaxed">
+            {post.description}
+          </p>
         </header>
 
-        {/* Content Section */}
-        <div
-          className="prose prose-invert prose-slate max-w-none 
-            prose-headings:text-foreground prose-headings:font-black
-            prose-p:text-muted-foreground prose-p:leading-relaxed
-            prose-strong:text-accent prose-strong:font-bold
-            prose-h3:text-primary prose-h3:mt-8
-            pb-16 border-b border-border"
-          dangerouslySetInnerHTML={{ __html: post.content }}
-        />
+        {/* Article Content */}
+        <article className="max-w-4xl mx-auto mb-16">
+          <div className="prose prose-lg max-w-none">
+            <div className="bg-white rounded-lg p-8 shadow-sm">
+              {post.content
+                .split("\n")
+                .map((paragraph: string, index: number) => (
+                  <p key={index} className="mb-4 text-gray-800 leading-relaxed">
+                    {paragraph}
+                  </p>
+                ))}
+            </div>
+          </div>
+        </article>
 
-        <footer className="mt-12 py-8 bg-card rounded-[--radius] border border-border p-8 text-center">
-          <h3 className="text-xl font-black text-black mb-2">
-            Ready to Start Winning?
-          </h3>
-          <p className="text-muted-foreground text-sm mb-6">
-            Download the official HU777 APK and get your ₹500 bonus today.
-          </p>
+        {/* Share Section */}
+        <section className="max-w-4xl mx-auto mb-16">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Share2 className="h-5 w-5" />
+                Share This Article
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex gap-4">
+                <Button variant="outline" size="sm">
+                  Twitter
+                </Button>
+                <Button variant="outline" size="sm">
+                  Facebook
+                </Button>
+                <Button variant="outline" size="sm">
+                  LinkedIn
+                </Button>
+                <Button variant="outline" size="sm">
+                  Copy Link
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
 
-          <Link
-            href={inviteLink}
-            rel="noopener noreferrer"
-            className="inline-block bg-primary hover:bg-red-600 text-black font-black py-4 px-10 rounded-md transition-all shadow-[0_5px_15px_rgba(239,68,68,0.3)] hover:-translate-y-1 active:scale-95"
-          >
-            GET THE APP NOW
-          </Link>
-        </footer>
+        {/* Related Posts */}
+        {relatedPosts.length > 0 && (
+          <section className="max-w-4xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold mb-8">Related Articles</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {relatedPosts.map((relatedPost) => (
+                <Card
+                  key={relatedPost.slug}
+                  className="hover:shadow-lg transition-shadow"
+                >
+                  <CardHeader>
+                    <CardTitle className="text-lg line-clamp-2">
+                      <Link
+                        href={`/blog/${relatedPost.slug}`}
+                        className="hover:text-blue-600 transition-colors"
+                      >
+                        {relatedPost.title}
+                      </Link>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="line-clamp-3 mb-4">
+                      {relatedPost.description}
+                    </CardDescription>
+                    <div className="flex items-center justify-between text-sm text-gray-500">
+                      <span>{relatedPost.author}</span>
+                      <span>
+                        {new Date(relatedPost.date).toLocaleDateString()}
+                      </span>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Internal Links */}
+        <section className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl font-bold mb-8">Explore More</h2>
+          <div className="grid md:grid-cols-4 gap-4">
+            {navigationLinks.slice(0, 4).map((link) => (
+              <Button key={link.href} variant="outline" asChild>
+                <Link href={link.href}>{link.name}</Link>
+              </Button>
+            ))}
+          </div>
+        </section>
       </main>
-
-      <footer className="py-12 text-center text-muted-foreground text-[10px] uppercase tracking-widest opacity-50">
-        © 2026 HU777 Games | Professional Content Hub
-      </footer>
     </div>
   );
 }

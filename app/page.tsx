@@ -1,24 +1,21 @@
+import { pages } from "@/lib/data";
+import { generateJsonLd } from "@/lib/jsonld";
+import { generateMetadata } from "@/lib/metadata";
+import { Metadata } from "next";
 import HomeController from "./home.controller";
 
-const Home = () => {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "HU777 Games",
-    url: "https://www.hu777gameplay.com",
-  };
+export const metadata: Metadata = generateMetadata(pages.home);
+
+export default function HomePage() {
+  const jsonLd = generateJsonLd(pages.home);
 
   return (
     <>
-      {/* Structured Data for SEO */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-
       <HomeController />
     </>
   );
-};
-
-export default Home;
+}

@@ -1,6 +1,10 @@
 import Link from "next/link";
 
-const footerData = {
+interface FooterProps {
+  footerLinks?: { name: string; href: string }[];
+}
+
+const defaultFooterData = {
   disclaimer: {
     text: "does not operate betting platforms. Content is for information only. Play responsibly & comply with local laws (18+).",
     link: "https://hu777gameplay.com/",
@@ -12,7 +16,8 @@ const footerData = {
   },
 };
 
-export default function Footer() {
+export default function Footer({ footerLinks }: FooterProps = {}) {
+  const footerData = defaultFooterData;
   return (
     <footer className="w-full border-t border-border bg-bg-secondary py-10 mt-auto">
       <div className="max-w-7xl mx-auto px-4">
@@ -37,6 +42,20 @@ export default function Footer() {
               </span>
             </p>
           </div>
+
+          {footerLinks && footerLinks.length > 0 && (
+            <div className="flex flex-wrap justify-center gap-6 mt-6">
+              {footerLinks.map((link, index) => (
+                <Link
+                  key={index}
+                  href={link.href}
+                  className="text-sm text-text-secondary hover:text-accent transition-colors"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+          )}
 
           <div className="flex flex-col items-center gap-2">
             <div className="h-[1px] w-20 bg-border mb-2" />

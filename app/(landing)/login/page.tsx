@@ -2,12 +2,12 @@ import { pages } from "@/lib/data";
 import { generateJsonLd } from "@/lib/jsonld";
 import { generateMetadata } from "@/lib/metadata";
 import { Metadata } from "next";
-import AboutController from "./about.controller";
+import LoginController from "./login.controller";
 
-export const metadata: Metadata = generateMetadata(pages.about);
+export const metadata: Metadata = generateMetadata(pages.login);
 
-export default function AboutPage() {
-  const jsonLd = generateJsonLd(pages.about);
+export default function LoginPage() {
+  const jsonLd = generateJsonLd(pages.login);
 
   return (
     <>
@@ -15,7 +15,7 @@ export default function AboutPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <AboutController />
+      <LoginController />
     </>
   );
 }
