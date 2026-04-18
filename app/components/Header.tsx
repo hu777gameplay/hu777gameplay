@@ -38,9 +38,10 @@ export default function Header({ navigationLinks }: HeaderProps = {}) {
     : defaultNavLinks;
 
   return (
-    <header className="w-full border-b border-border bg-bg-primary sticky top-0 z-50">
+    <header className="w-full border-b border-gray-200 bg-white sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between py-4">
+          {/* LOGO */}
           <Link href={routes.HOME} className="flex items-center gap-2 group">
             <Image
               src={logo}
@@ -49,9 +50,12 @@ export default function Header({ navigationLinks }: HeaderProps = {}) {
               height={36}
               className="rounded-md transition-transform group-hover:scale-110"
             />
-            <span className="font-bold text-black tracking-tight">HU777</span>
+            <span className="font-bold text-black tracking-tight text-lg">
+              HU777
+            </span>
           </Link>
 
+          {/* DESKTOP NAV */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
             {navLinks.map((item: any, index: any) => {
               const isActive = pathname === item.path;
@@ -60,116 +64,128 @@ export default function Header({ navigationLinks }: HeaderProps = {}) {
                 <Link
                   key={index}
                   href={item.path}
-                  className={`transition-all duration-300 ease-in-out ${
-                    isActive
-                      ? "text-accent drop-shadow-[0_0_8px_rgba(245,158,11,0.4)]"
-                      : "text-text-secondary hover:text-black"
+                  className={`relative transition-all duration-300 ${
+                    isActive ? "text-black" : "text-gray-500 hover:text-black"
                   }`}
                 >
                   {item.name}
+                  {isActive && (
+                    <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-yellow-500 rounded-full" />
+                  )}
                 </Link>
               );
             })}
           </nav>
 
-          {/* Auth Section - Desktop */}
-          <div className="hidden md:flex items-center gap-4">
+          {/* DESKTOP AUTH */}
+          <div className="hidden md:flex items-center gap-3">
             {user ? (
-              <div className="flex items-center gap-2">
-                <Button asChild variant="outline" size="sm">
-                  <Link href="/profile" className="flex items-center gap-2">
-                    <User className="h-4 w-4" />
-                    Profile
-                  </Link>
-                </Button>
-              </div>
+              <Button asChild variant="outline" size="sm">
+                <Link href="/profile" className="flex items-center gap-2">
+                  <User className="h-4 w-4" />
+                  Profile
+                </Link>
+              </Button>
             ) : (
-              <div className="flex items-center gap-2">
+              <>
                 <Button asChild variant="outline" size="sm">
                   <Link href="/login">Login</Link>
                 </Button>
-                <Button asChild size="sm">
-                  <Link href="/register">Register</Link>
-                </Button>
-              </div>
+              </>
             )}
           </div>
 
+          {/* MOBILE DRAWER */}
           <div className="md:hidden">
             <Drawer direction="right">
               <DrawerTrigger asChild>
-                <button className="p-2 rounded-md hover:bg-bg-card text-black transition-colors">
+                <button className="p-2 rounded-lg hover:bg-gray-100 transition">
                   <Menu size={26} />
                 </button>
               </DrawerTrigger>
 
-              <DrawerContent className="h-full w-72 right-0 left-auto fixed bg-bg-secondary border-l border-border rounded-none outline-none">
-                <div className="p-6 flex flex-col h-full">
-                  <DrawerClose asChild>
-                    <div className="flex items-center gap-2 mb-8 border-b border-border pb-4">
+              <DrawerContent className="h-full w-80 right-0 left-auto fixed bg-white/95 backdrop-blur-xl border-l border-gray-200 shadow-2xl outline-none">
+                <div className="flex flex-col h-full">
+                  {/* HEADER */}
+                  <div className="flex items-center justify-between px-6 py-5 border-b border-gray-200">
+                    <div className="flex items-center gap-3">
                       <Image
                         src={logo}
                         alt="logo"
-                        width={32}
-                        height={32}
-                        className="rounded-md"
+                        width={36}
+                        height={36}
+                        className="rounded-lg"
                       />
-                      <span className="font-bold text-black text-lg">
-                        HU777 Menu
+                      <span className="font-bold text-lg text-gray-900">
+                        HU777
                       </span>
                     </div>
-                  </DrawerClose>
 
-                  <div className="flex flex-col gap-2 flex-grow">
-                    {navLinks.map((item: any, index: any) => {
-                      const isActive = pathname === item.path;
+                    <DrawerClose asChild>
+                      <button className="p-2 rounded-lg hover:bg-gray-100 transition">
+                        ✕
+                      </button>
+                    </DrawerClose>
+                  </div>
 
-                      return (
-                        <DrawerClose asChild key={index}>
+                  {/* SCROLL AREA */}
+                  <div className="flex-1 overflow-y-auto px-4 py-6">
+                    {/* NAVIGATION */}
+                    <p className="text-xs font-semibold text-gray-400 uppercase px-3 mb-3">
+                      Navigation
+                    </p>
+
+                    <div className="flex flex-col gap-1">
+                      {navLinks.map((item: any, index: any) => {
+                        const isActive = pathname === item.path;
+
+                        return (
+                          <DrawerClose asChild key={index}>
+                            <Link
+                              href={item.path}
+                              className={`flex items-center px-4 py-3 rounded-xl transition-all ${
+                                isActive
+                                  ? "bg-gray-100 text-black font-semibold border-l-4 border-yellow-500"
+                                  : "text-gray-600 hover:text-black hover:bg-gray-50"
+                              }`}
+                            >
+                              {item.name}
+                            </Link>
+                          </DrawerClose>
+                        );
+                      })}
+                    </div>
+
+                    {/* ACCOUNT */}
+                    <div className="mt-8">
+                      <p className="text-xs font-semibold text-gray-400 uppercase px-3 mb-3">
+                        Account
+                      </p>
+
+                      {user ? (
+                        <DrawerClose asChild>
                           <Link
-                            href={item.path}
-                            className={`block px-4 py-3 rounded-xl font-medium transition-all duration-300 ${
-                              isActive
-                                ? "text-accent bg-bg-card"
-                                : "text-text-secondary hover:text-black hover:bg-bg-card"
-                            }`}
+                            href="/profile"
+                            className="flex items-center gap-2 px-4 py-3 rounded-xl hover:bg-gray-50 transition"
                           >
-                            {item.name}
+                            <User className="h-4 w-4" />
+                            Profile
                           </Link>
                         </DrawerClose>
-                      );
-                    })}
-
-                    {/* Auth Section - Mobile */}
-                    <div className="border-t border-border pt-4 mt-4">
-                      {user ? (
-                        <div className="space-y-2">
-                          <DrawerClose asChild>
-                            <Button
-                              asChild
-                              variant="outline"
-                              className="w-full flex items-center gap-2"
-                            >
-                              <Link href="/profile">
-                                <User className="h-4 w-4" />
-                                Profile
-                              </Link>
-                            </Button>
-                          </DrawerClose>
-                        </div>
                       ) : (
                         <div className="space-y-2">
                           <DrawerClose asChild>
                             <Button
                               asChild
                               variant="outline"
-                              className="w-full"
+                              className="w-full rounded-xl"
                             >
                               <Link href="/login">Login</Link>
                             </Button>
                           </DrawerClose>
+
                           <DrawerClose asChild>
-                            <Button asChild className="w-full">
+                            <Button asChild className="w-full rounded-xl">
                               <Link href="/register">Register</Link>
                             </Button>
                           </DrawerClose>
@@ -178,14 +194,17 @@ export default function Header({ navigationLinks }: HeaderProps = {}) {
                     </div>
                   </div>
 
-                  <DrawerClose asChild>
-                    <Link
-                      href="https://invite.hu777.club/?code=DU7ITHS"
-                      className="mt-auto bg-gradient-to-r from-red-600 to-yellow-500 text-black px-4 py-4 rounded-2xl text-center font-bold shadow-lg hover:brightness-110 active:scale-95 transition-all uppercase tracking-widest text-xs"
-                    >
-                      Download APK
-                    </Link>
-                  </DrawerClose>
+                  {/* FOOTER CTA */}
+                  <div className="p-5 border-t border-gray-200">
+                    <DrawerClose asChild>
+                      <Link
+                        href="https://invite.hu777.club/?code=DU7ITHS"
+                        className="block w-full text-center bg-gradient-to-r from-red-500 to-yellow-400 text-black font-bold py-4 rounded-2xl shadow-lg hover:scale-[1.02] active:scale-95 transition-all text-sm tracking-wide"
+                      >
+                        🚀 Download APK
+                      </Link>
+                    </DrawerClose>
+                  </div>
                 </div>
               </DrawerContent>
             </Drawer>
