@@ -135,6 +135,99 @@ export const blogPosts: BlogPost[] = [
     author: "HU777 Team",
     tags: ["mobile", "tips", "strategy"],
   },
+
+  // 🔥 NEW SEO BLOGS
+
+  {
+    slug: "hu777-apk-download-guide",
+    title: "HU777 APK Download Guide (Latest Version 2026)",
+    description:
+      "Step-by-step guide to download HU777 APK safely on Android devices. Get the latest version with installation instructions.",
+    content: "Detailed APK download guide...",
+    date: "2024-02-01",
+    author: "HU777 Team",
+    tags: ["apk", "download", "android"],
+  },
+  {
+    slug: "hu777-login-problems-fix",
+    title: "HU777 Login Problems? Here’s How to Fix Them",
+    description:
+      "Facing login issues on HU777? Learn common problems and quick solutions to access your account بسهولة.",
+    content: "Login troubleshooting guide...",
+    date: "2024-02-05",
+    author: "HU777 Team",
+    tags: ["login", "fix", "help"],
+  },
+  {
+    slug: "hu777-register-account",
+    title: "How to Register on HU777 (Step-by-Step Guide)",
+    description:
+      "Create your HU777 account بسهولة with this beginner-friendly registration guide.",
+    content: "Registration steps guide...",
+    date: "2024-02-08",
+    author: "HU777 Team",
+    tags: ["register", "account", "guide"],
+  },
+  {
+    slug: "is-hu777-safe",
+    title: "Is HU777 Safe or Not? Full Security Review",
+    description:
+      "Understand HU777 platform safety, security measures, and whether it is safe to play.",
+    content: "Safety review content...",
+    date: "2024-02-12",
+    author: "HU777 Team",
+    tags: ["safety", "review", "security"],
+  },
+  {
+    slug: "hu777-games-list",
+    title: "HU777 Games List: All Available Games Explained",
+    description:
+      "Explore all games available on HU777 platform including slots, casino, and more.",
+    content: "Games overview content...",
+    date: "2024-02-15",
+    author: "HU777 Team",
+    tags: ["games", "casino", "list"],
+  },
+  {
+    slug: "hu777-withdrawal-guide",
+    title: "HU777 Withdrawal Guide: How to Cash Out Easily",
+    description:
+      "Learn how to withdraw money from HU777 step-by-step without any issues.",
+    content: "Withdrawal guide content...",
+    date: "2024-02-18",
+    author: "HU777 Team",
+    tags: ["withdrawal", "money", "guide"],
+  },
+  {
+    slug: "hu777-deposit-methods",
+    title: "HU777 Deposit Methods: All Payment Options",
+    description:
+      "Check all available deposit methods on HU777 including fast and secure payment options.",
+    content: "Deposit methods content...",
+    date: "2024-02-20",
+    author: "HU777 Team",
+    tags: ["deposit", "payment", "methods"],
+  },
+  {
+    slug: "hu777-winning-strategies",
+    title: "Top HU777 Winning Strategies for Beginners",
+    description:
+      "Improve your chances of winning with these proven HU777 gaming strategies.",
+    content: "Winning strategies content...",
+    date: "2024-02-25",
+    author: "HU777 Team",
+    tags: ["strategy", "winning", "tips"],
+  },
+  {
+    slug: "hu777-app-vs-website",
+    title: "HU777 App vs Website: Which is Better?",
+    description:
+      "Compare HU777 mobile app and website to find out which is better for gameplay.",
+    content: "Comparison content...",
+    date: "2024-03-01",
+    author: "HU777 Team",
+    tags: ["app", "website", "comparison"],
+  },
 ];
 
 export const navigationLinks = [
