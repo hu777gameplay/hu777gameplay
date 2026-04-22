@@ -97,4 +97,192 @@ export const blogData = [
       <p>Every recharge above ₹1,000 gives you a free spin on the Gold Wheel, where you can win up to <strong>₹5,000 instantly</strong>.</p>
     `,
   },
+
+  // 🔥 ADD THESE 15 BLOGS
+
+  {
+    slug: "hu777-apk-download-latest-version",
+    category: "Download",
+    title: "HU777 APK Download Latest Version (2026 Updated)",
+    author: "Admin",
+    date: "March 01, 2026",
+    excerpt:
+      "Download HU777 APK safely with the latest version and installation guide for Android users.",
+    content: `
+    <p>Downloading the latest HU777 APK ensures you get new features and bug fixes.</p>
+    <h3>Steps to Download</h3>
+    <p>Click the official link and install the APK manually on your Android device.</p>
+  `,
+  },
+
+  {
+    slug: "hu777-login-step-by-step",
+    category: "Tutorial",
+    title: "HU777 Login Guide: Step-by-Step Process for Beginners",
+    author: "Tech Support",
+    date: "March 02, 2026",
+    excerpt:
+      "Learn how to login to your HU777 account quickly and fix common login errors.",
+    content: `
+    <p>Logging into HU777 is simple if you follow the correct steps.</p>
+    <h3>Steps</h3>
+    <p>Enter mobile number and password, then verify OTP.</p>
+  `,
+  },
+
+  {
+    slug: "hu777-signup-bonus-guide",
+    category: "Bonuses",
+    title: "HU777 Signup Bonus Guide: How to Claim 100% Bonus",
+    author: "Marketing Team",
+    date: "March 03, 2026",
+    excerpt: "New users can get a 100% bonus. Learn how to claim it easily.",
+    content: `
+    <p>HU777 offers a generous welcome bonus for new players.</p>
+  `,
+  },
+
+  {
+    slug: "k123-game-download-apk",
+    category: "Download",
+    title: "K123 Game Download APK (Latest Version Guide)",
+    author: "Admin",
+    date: "March 04, 2026",
+    excerpt: "Download K123 game APK safely and start playing instantly.",
+    content: `
+    <p>K123 is a fast-growing gaming platform in India.</p>
+  `,
+  },
+
+  {
+    slug: "k123-login-register-guide",
+    category: "Tutorial",
+    title: "K123 Login & Register Guide for New Users",
+    author: "Tech Support",
+    date: "March 05, 2026",
+    excerpt: "Complete guide to create and login to your K123 account.",
+    content: `
+    <p>Create your K123 account using mobile number and OTP.</p>
+  `,
+  },
+
+  {
+    slug: "k123-real-or-fake",
+    category: "Review",
+    title: "K123 Game Real or Fake? Honest Review 2026",
+    author: "Rohan Kumar",
+    date: "March 06, 2026",
+    excerpt: "Is K123 safe? Full review with gameplay and withdrawal proof.",
+    content: `
+    <p>K123 offers multiple games and fast withdrawals.</p>
+  `,
+  },
+
+  {
+    slug: "in7-game-download-guide",
+    category: "Download",
+    title: "IN7 Game Download Guide (Official Link)",
+    author: "Admin",
+    date: "March 07, 2026",
+    excerpt: "Download IN7 game using official link and start playing.",
+    content: `
+    <p>IN7 game provides real money gaming experience.</p>
+  `,
+  },
+
+  {
+    slug: "in7-login-problem-fix",
+    category: "Support",
+    title: "IN7 Login Problem? Quick Fix Guide",
+    author: "Support Team",
+    date: "March 08, 2026",
+    excerpt: "Fix IN7 login issues easily with this step-by-step guide.",
+    content: `
+    <p>Most login issues are caused by incorrect credentials.</p>
+  `,
+  },
+
+  {
+    slug: "in7-withdrawal-proof",
+    category: "Review",
+    title: "IN7 Withdrawal Proof & Payment Speed Test",
+    author: "Admin",
+    date: "March 09, 2026",
+    excerpt: "Check real withdrawal proof and payout speed of IN7 game.",
+    content: `
+    <p>We tested withdrawals and received payments quickly.</p>
+  `,
+  },
+
+  {
+    slug: "best-earning-apps-india-2026",
+    category: "Guide",
+    title: "Best Earning Apps in India 2026 (Top 5 List)",
+    author: "Editorial Team",
+    date: "March 10, 2026",
+    excerpt: "Discover top earning apps including HU777, K123, and IN7.",
+    content: `
+    <p>Here are the best real money earning apps in India.</p>
+  `,
+  },
+
+  {
+    slug: "hu777-vs-k123-vs-in7",
+    category: "Comparison",
+    title: "HU777 vs K123 vs IN7: Which App is Best?",
+    author: "Admin",
+    date: "March 11, 2026",
+    excerpt: "Compare HU777, K123, and IN7 apps to find the best one.",
+    content: `
+    <p>Each app has unique features and benefits.</p>
+  `,
+  },
+
+  {
+    slug: "hu777-fast-withdrawal-tips",
+    category: "Tips",
+    title: "HU777 Fast Withdrawal Tips (Instant Payout)",
+    author: "Pro Player",
+    date: "March 12, 2026",
+    excerpt: "Speed up your HU777 withdrawals with these tips.",
+    content: `
+    <p>Use verified UPI ID for faster withdrawals.</p>
+  `,
+  },
+
+  {
+    slug: "k123-winning-strategies",
+    category: "Strategy",
+    title: "Top K123 Winning Strategies for Beginners",
+    author: "Game Expert",
+    date: "March 13, 2026",
+    excerpt: "Improve your winning chances with K123 strategies.",
+    content: `
+    <p>Always manage your bankroll wisely.</p>
+  `,
+  },
+
+  {
+    slug: "in7-bonus-offers-guide",
+    category: "Bonuses",
+    title: "IN7 Bonus Offers Guide (Latest 2026)",
+    author: "Marketing Team",
+    date: "March 14, 2026",
+    excerpt: "Learn how to claim IN7 bonuses and rewards.",
+    content: `
+    <p>IN7 offers daily and referral bonuses.</p>
+  `,
+  },
+
+  {
+    slug: "hu777-referral-code-benefits",
+    category: "Guide",
+    title: "HU777 Referral Code Benefits & Earnings",
+    author: "Admin",
+    date: "March 15, 2026",
+    excerpt: "Earn extra money using HU777 referral system.",
+    content: `
+    <p>Invite friends and earn commission on gameplay.</p>
+  `,
+  },
 ];

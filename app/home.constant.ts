@@ -58,8 +58,8 @@ export const HERO_DATA = {
       style: "secondary",
     },
     {
-      text: "💎 KA9 App – Download & Play",
-      link: "https://invite.ka9.club/?code=92B0VMS",
+      text: "💎 Download & Play K123",
+      link: "https://www.k123game.com/?inviteCode=WX4LZUS",
       style: "accent",
     },
     {

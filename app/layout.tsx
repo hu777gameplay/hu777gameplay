@@ -29,6 +29,16 @@ export const metadata: Metadata = {
     "HU777 Games official guide 2026. Download HU777 APK, login, register account, bonus offers, casino games, slots, and latest updates. 100% safe guide for HU777 users.",
 
   keywords: [
+    // 🔥 BRAND (VERY IMPORTANT)
+    "hu777gameplay",
+    "hu777gameplay.com",
+    "hu777 gameplay website",
+    "hu777 gameplay official site",
+
+    // =========================
+    // 🔴 HU777 KEYWORDS
+    // =========================
+
     // MAIN
     "hu777",
     "hu777 games",
@@ -54,7 +64,7 @@ export const metadata: Metadata = {
     "hu777 betting app",
     "hu777 earning app",
 
-    // LONG TAIL (VERY IMPORTANT 🔥)
+    // LONG TAIL
     "how to download hu777 apk",
     "how to login hu777 account",
     "hu777 real or fake",
@@ -64,11 +74,57 @@ export const metadata: Metadata = {
     "hu777 bonus offers",
     "hu777 referral code",
 
-    // LOCATION (India SEO boost 🇮🇳)
+    // INDIA SEO
     "hu777 india",
     "hu777 app india",
-    "best earning app india",
+    "best earning app india hu777",
     "online casino india hu777",
+
+    // =========================
+    // 🔵 K123 GAME KEYWORDS
+    // =========================
+
+    "k123 game",
+    "k123 game download",
+    "k123 apk",
+    "k123 login",
+    "k123 register",
+    "k123 app download",
+    "k123 earning app",
+    "k123 casino",
+    "k123 slot games",
+    "how to download k123 game",
+    "k123 app india",
+    "k123 game review",
+    "k123 safe or not",
+
+    // =========================
+    // 🟢 IN7 GAME KEYWORDS
+    // =========================
+
+    "in7 game",
+    "in7 game download",
+    "in7 apk",
+    "in7 login",
+    "in7 register",
+    "in7 app download",
+    "in7 earning app",
+    "in7 casino",
+    "in7 slot games",
+    "how to download in7 game",
+    "in7 app india",
+    "in7 game review",
+    "in7 safe or not",
+
+    // =========================
+    // 🔥 MIXED / HIGH TRAFFIC
+    // =========================
+
+    "best earning app india",
+    "real money earning apps",
+    "casino apps india",
+    "online betting apps india",
+    "apk download earning apps",
   ],
 
   authors: [{ name: "HU777 Games" }],

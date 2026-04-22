@@ -33,10 +33,10 @@ const AboutController = () => {
             </Link>
 
             <Link
-              href="https://invite.ka9.club/?code=92B0VMS"
+              href="https://www.k123game.com/?inviteCode=WX4LZUS"
               className="bg-gradient-to-r from-blue-500 to-cyan-600 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all uppercase tracking-wider text-center"
             >
-              💎 KA9 App – Download & Play
+              💎 Download & Play K123
             </Link>
 
             <Link

@@ -18,10 +18,11 @@ export interface BlogPost {
   tags: string[];
 }
 
+// ✅ SITE CONFIG
 export const siteConfig = {
   name: "HU777 Gameplay",
   description:
-    "Experience the ultimate gaming adventure with HU777 - the premier gaming platform for thrilling gameplay and massive rewards.",
+    "Download HU777, K123, and IN7 games. Get APK, login guide, bonuses, and start earning with top gaming apps in India.",
   url: "https://hu777gameplay.com",
   ogImage: "/images/og-image.jpg",
   links: {
@@ -30,220 +31,171 @@ export const siteConfig = {
   },
 };
 
+// ✅ SEO PAGES
 export const pages = {
   home: {
-    title: "HU777 Gameplay - Ultimate Gaming Experience",
+    title: "HU777 Gameplay | Download APK, Login & Earn Money (India)",
     description:
-      "Join HU777 Gameplay for the most exciting gaming experience. Download now and start your adventure with massive rewards and thrilling gameplay.",
-    keywords: ["HU777", "gaming", "online games", "mobile gaming", "rewards"],
+      "Download HU777, K123, and IN7 apps. Get APK, login guide, and start earning with top gaming apps in India.",
+    keywords: [
+      "hu777 gameplay",
+      "hu777 apk download",
+      "k123 game download",
+      "in7 game download",
+      "earning app india",
+    ],
     url: "/",
     image: "/images/hero-banner.jpg",
   },
-  about: {
-    title: "About HU777 - Leading Gaming Platform",
-    description:
-      "Learn about HU777, the premier gaming platform offering unparalleled gaming experiences, fair play, and massive rewards for all players.",
-    keywords: ["about HU777", "gaming platform", "fair gaming", "rewards"],
-    url: "/about",
-  },
+
   blog: {
-    title: "HU777 Blog - Gaming Tips & Updates",
+    title: "HU777 Blog | APK Download, Login & Earning Tips",
     description:
-      "Stay updated with the latest gaming tips, strategies, and HU777 platform updates. Your ultimate guide to gaming success.",
-    keywords: ["gaming blog", "HU777 tips", "gaming strategies", "updates"],
+      "Read guides for HU777, K123, and IN7 apps including download, login help, safety review, and earning tips.",
+    keywords: ["hu777 blog", "k123 guide", "in7 tips", "apk download guide"],
     url: "/blog",
   },
+
   apk: {
-    title: "Download HU777 APK - Free Gaming App",
+    title: "Download HU777 APK (Latest Version)",
     description:
-      "Download the official HU777 APK for Android. Get instant access to thrilling games, exclusive bonuses, and seamless mobile gaming experience.",
-    keywords: ["HU777 APK", "download", "Android app", "mobile gaming"],
+      "Download HU777 APK latest version for Android. Safe install guide with bonus access.",
+    keywords: ["hu777 apk", "hu777 apk download", "download hu777 app"],
     url: "/apk",
   },
+
   login: {
-    title: "Login to HU777 - Access Your Account",
+    title: "HU777 Login | Secure Account Access",
     description:
-      "Secure login to your HU777 gaming account. Access your profile, check rewards, and continue your gaming journey.",
-    keywords: ["HU777 login", "account access", "gaming account"],
+      "Login to your HU777 account. Fix login issues and access your gaming dashboard.",
+    keywords: ["hu777 login", "hu777 account login", "hu777 login problem"],
     url: "/login",
   },
+
   register: {
-    title: "Register HU777 Account - Join Now",
+    title: "Register HU777 Account | Sign Up & Bonus",
     description:
-      "Create your HU777 gaming account today. Sign up for exclusive bonuses, tournaments, and start winning big rewards.",
-    keywords: ["HU777 register", "sign up", "gaming account", "bonuses"],
+      "Create HU777 account and get signup bonus. Easy registration guide.",
+    keywords: ["hu777 register", "hu777 sign up", "create hu777 account"],
     url: "/register",
   },
+
   download: {
-    title: "Download HU777 - Get Started Today",
+    title: "Download HU777, K123 & IN7 Apps",
     description:
-      "Download HU777 and begin your gaming adventure. Choose from multiple platforms and start winning with our user-friendly interface.",
-    keywords: ["download HU777", "gaming platform", "get started"],
+      "Download HU777, K123, and IN7 gaming apps. Get official APK links and start playing instantly.",
+    keywords: ["download hu777", "k123 game download", "in7 game download"],
     url: "/download",
   },
-  disclaimer: {
-    title: "HU777 Disclaimer - Terms & Conditions",
+
+  hu777: {
+    title: "HU777 Official Website | APK, Login & Review",
     description:
-      "Read the official HU777 disclaimer, terms of service, and responsible gaming guidelines. Play responsibly and enjoy fair gaming.",
-    keywords: ["HU777 disclaimer", "terms", "responsible gaming"],
+      "Download HU777 APK, login account, check bonus offers, and read full review.",
+    keywords: [
+      "hu777 official website",
+      "hu777 apk download",
+      "hu777 review",
+      "hu777 safe or not",
+    ],
+    url: "/hu777",
+  },
+
+  // 🔥 NEW PAGES
+  k123: {
+    title: "K123 Game Download | APK, Login & Review",
+    description:
+      "Download K123 game APK, login account, and explore features with full guide.",
+    keywords: [
+      "k123 game",
+      "k123 apk download",
+      "k123 login",
+      "k123 earning app",
+    ],
+    url: "/k123",
+  },
+
+  in7: {
+    title: "IN7 Game Download | Official Link & Login Guide",
+    description:
+      "Access IN7 game official link, login guide, and APK download.",
+    keywords: ["in7 game", "in7 apk", "in7 login", "in7 game download"],
+    url: "/in7",
+  },
+
+  disclaimer: {
+    title: "Disclaimer | Terms & Responsible Gaming",
+    description: "Read terms, disclaimer, and responsible gaming policy.",
+    keywords: ["disclaimer", "terms", "responsible gaming"],
     url: "/disclaimer",
   },
+
   "privacy-policy": {
-    title: "HU777 Privacy Policy - Data Protection",
-    description:
-      "Learn how HU777 protects your privacy and personal data. Our comprehensive privacy policy ensures secure and transparent gaming experience.",
-    keywords: ["privacy policy", "data protection", "HU777 security"],
+    title: "Privacy Policy | Data Protection & Security",
+    description: "Learn how we protect your data and ensure secure experience.",
+    keywords: ["privacy policy", "data protection"],
     url: "/privacy-policy",
-  },
-  hu777: {
-    title: "HU777 Official Page - Premium Gaming",
-    description:
-      "Explore the official HU777 gaming platform. Discover features, bonuses, and everything you need to know about premium gaming experience.",
-    keywords: ["HU777 official", "gaming platform", "premium gaming"],
-    url: "/hu777",
   },
 } as const satisfies Record<string, PageData>;
 
+// ✅ BLOG POSTS (EXTENDED SEO)
 export const blogPosts: BlogPost[] = [
   {
-    slug: "getting-started-hu777",
-    title: "Getting Started with HU777: Your Ultimate Guide",
-    description:
-      "Learn how to get started with HU777 gaming platform. From registration to your first win, this guide covers everything you need to know.",
-    content: "Complete guide content here...",
-    date: "2024-01-15",
-    author: "HU777 Team",
-    tags: ["beginner", "guide", "tutorial"],
-  },
-  {
-    slug: "hu777-bonuses-explained",
-    title: "HU777 Bonuses Explained: Maximize Your Rewards",
-    description:
-      "Discover all the bonus opportunities available on HU777. Learn how to claim and maximize your bonuses for bigger wins.",
-    content: "Bonus guide content here...",
-    date: "2024-01-20",
-    author: "HU777 Team",
-    tags: ["bonuses", "rewards", "tips"],
-  },
-  {
-    slug: "mobile-gaming-tips",
-    title: "Top Mobile Gaming Tips for HU777 Players",
-    description:
-      "Master mobile gaming with these expert tips. Improve your gameplay and increase your chances of winning on HU777.",
-    content: "Mobile gaming tips content here...",
-    date: "2024-01-25",
-    author: "HU777 Team",
-    tags: ["mobile", "tips", "strategy"],
-  },
-
-  // 🔥 NEW SEO BLOGS
-
-  {
     slug: "hu777-apk-download-guide",
-    title: "HU777 APK Download Guide (Latest Version 2026)",
+    title: "HU777 APK Download Guide (Latest Version)",
     description:
-      "Step-by-step guide to download HU777 APK safely on Android devices. Get the latest version with installation instructions.",
-    content: "Detailed APK download guide...",
+      "Step-by-step guide to download HU777 APK safely on Android devices.",
+    content: "Add full SEO content here (1000+ words)...",
     date: "2024-02-01",
     author: "HU777 Team",
-    tags: ["apk", "download", "android"],
+    tags: ["apk", "download"],
   },
   {
     slug: "hu777-login-problems-fix",
-    title: "HU777 Login Problems? Here’s How to Fix Them",
-    description:
-      "Facing login issues on HU777? Learn common problems and quick solutions to access your account بسهولة.",
-    content: "Login troubleshooting guide...",
+    title: "HU777 Login Problems? Fix Easily",
+    description: "Common HU777 login problems and quick solutions.",
+    content: "Add full SEO content here...",
     date: "2024-02-05",
     author: "HU777 Team",
-    tags: ["login", "fix", "help"],
+    tags: ["login", "fix"],
   },
   {
-    slug: "hu777-register-account",
-    title: "How to Register on HU777 (Step-by-Step Guide)",
-    description:
-      "Create your HU777 account بسهولة with this beginner-friendly registration guide.",
-    content: "Registration steps guide...",
-    date: "2024-02-08",
+    slug: "k123-game-download-guide",
+    title: "K123 Game Download Guide (APK)",
+    description: "Download K123 APK and start playing easily.",
+    content: "Add full SEO content here...",
+    date: "2024-02-10",
     author: "HU777 Team",
-    tags: ["register", "account", "guide"],
+    tags: ["k123", "download"],
   },
   {
-    slug: "is-hu777-safe",
-    title: "Is HU777 Safe or Not? Full Security Review",
-    description:
-      "Understand HU777 platform safety, security measures, and whether it is safe to play.",
-    content: "Safety review content...",
-    date: "2024-02-12",
-    author: "HU777 Team",
-    tags: ["safety", "review", "security"],
-  },
-  {
-    slug: "hu777-games-list",
-    title: "HU777 Games List: All Available Games Explained",
-    description:
-      "Explore all games available on HU777 platform including slots, casino, and more.",
-    content: "Games overview content...",
+    slug: "in7-game-login-guide",
+    title: "IN7 Game Login Guide & Access",
+    description: "Learn how to login to IN7 game account بسهولة.",
+    content: "Add full SEO content here...",
     date: "2024-02-15",
     author: "HU777 Team",
-    tags: ["games", "casino", "list"],
-  },
-  {
-    slug: "hu777-withdrawal-guide",
-    title: "HU777 Withdrawal Guide: How to Cash Out Easily",
-    description:
-      "Learn how to withdraw money from HU777 step-by-step without any issues.",
-    content: "Withdrawal guide content...",
-    date: "2024-02-18",
-    author: "HU777 Team",
-    tags: ["withdrawal", "money", "guide"],
-  },
-  {
-    slug: "hu777-deposit-methods",
-    title: "HU777 Deposit Methods: All Payment Options",
-    description:
-      "Check all available deposit methods on HU777 including fast and secure payment options.",
-    content: "Deposit methods content...",
-    date: "2024-02-20",
-    author: "HU777 Team",
-    tags: ["deposit", "payment", "methods"],
-  },
-  {
-    slug: "hu777-winning-strategies",
-    title: "Top HU777 Winning Strategies for Beginners",
-    description:
-      "Improve your chances of winning with these proven HU777 gaming strategies.",
-    content: "Winning strategies content...",
-    date: "2024-02-25",
-    author: "HU777 Team",
-    tags: ["strategy", "winning", "tips"],
-  },
-  {
-    slug: "hu777-app-vs-website",
-    title: "HU777 App vs Website: Which is Better?",
-    description:
-      "Compare HU777 mobile app and website to find out which is better for gameplay.",
-    content: "Comparison content...",
-    date: "2024-03-01",
-    author: "HU777 Team",
-    tags: ["app", "website", "comparison"],
+    tags: ["in7", "login"],
   },
 ];
 
+// ✅ NAVIGATION
 export const navigationLinks = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
   { name: "Blog", href: "/blog" },
   { name: "Download APK", href: "/apk" },
-  { name: "Login", href: "/login" },
-  { name: "Register", href: "/register" },
-  { name: "Download", href: "/download" },
   { name: "HU777", href: "/hu777" },
+  { name: "K123 Game", href: "/k123" },
+  { name: "IN7 Game", href: "/in7" },
+  { name: "Login", href: "/login" },
 ];
 
+// ✅ FOOTER
 export const footerLinks = [
   { name: "Privacy Policy", href: "/privacy-policy" },
   { name: "Disclaimer", href: "/disclaimer" },
-  { name: "About", href: "/about" },
   { name: "Blog", href: "/blog" },
+  { name: "HU777", href: "/hu777" },
+  { name: "K123", href: "/k123" },
+  { name: "IN7", href: "/in7" },
 ];
