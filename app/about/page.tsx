@@ -4,10 +4,10 @@ import { generateMetadata } from "@/lib/metadata";
 import { Metadata } from "next";
 import AboutController from "./about.controller";
 
-export const metadata: Metadata = generateMetadata(pages.about);
+export const metadata: Metadata = generateMetadata(pages?.hu777);
 
 export default function AboutPage() {
-  const jsonLd = generateJsonLd(pages.about);
+  const jsonLd = generateJsonLd(pages?.hu777);
 
   return (
     <>
