@@ -26,10 +26,10 @@ const AboutController = () => {
 
           <div className="flex flex-col w-full max-w-sm gap-4">
             <Link
-              href="https://acc.in7game.org/api/web/share/index.html?ic=AA0MCX3K&ts=1776184440&m=2&lang=en&id=1"
+              href="https://btg03.com/indexd1.html?invite_code=5JA2QPHM1"
               className="bg-emerald-500 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all text-center"
             >
-              🚀 IN7 Game – Official Access Link
+              🚀 BT03 Game – Official Access Link
             </Link>
 
             <Link
