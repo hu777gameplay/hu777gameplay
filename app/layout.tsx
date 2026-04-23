@@ -1,5 +1,4 @@
 import ScrollToTop from "@/components/ui/scrollToTop";
-import { AuthProvider } from "@/lib/auth";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -21,110 +20,59 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.hu777gameplay.com"),
 
   title: {
-    default: "HU777 Games 2026 – APK Download, Login, Register & Full Guide",
-    template: "%s | HU777 Games",
+    default: "HU777 Gameplay – APK Download, BT03 & K123 Game Guide 2026",
+    template: "%s | HU777 Gameplay",
   },
 
   description:
     "HU777 Games official guide 2026. Download HU777 APK, login, register account, bonus offers, casino games, slots, and latest updates. 100% safe guide for HU777 users.",
 
   keywords: [
-    // 🔥 BRAND (VERY IMPORTANT)
-    "hu777gameplay",
-    "hu777gameplay.com",
-    "hu777 gameplay website",
-    "hu777 gameplay official site",
-
-    // =========================
-    // 🔴 HU777 KEYWORDS
-    // =========================
-
-    // MAIN
-    "hu777",
-    "hu777 games",
+    // 🔴 HU777 GAMEPLAY (MAIN FOCUS)
     "hu777 gameplay",
-    "hu777 official website",
+    "hu777gameplay",
+    "hu777 gameplay website",
+    "hu777 gameplay guide",
+    "hu777 gameplay apk",
+    "hu777 gameplay download",
+    "hu777 gameplay india",
+    "hu777 gameplay casino",
+    "hu777 gameplay slot games",
+    "hu777 gameplay earning app",
+    "hu777 gameplay bonus",
+    "hu777 gameplay latest update",
+    "hu777 gameplay review",
 
-    // DOWNLOAD
-    "hu777 apk",
-    "hu777 apk download",
-    "hu777 latest apk",
-    "download hu777 app",
+    // 🟠 BT03 GAME
+    "bt03 game",
+    "bt03 game play",
+    "bt03 game download",
+    "bt03 game apk",
+    "bt03 earning app",
+    "bt03 casino game",
+    "bt03 slot games",
+    "bt03 game india",
+    "bt03 game review",
+    "bt03 fast access game",
 
-    // LOGIN / REGISTER
-    "hu777 login",
-    "hu777 register",
-    "hu777 sign up",
-    "hu777 account login",
-
-    // CASINO / GAMES
-    "hu777 casino",
-    "hu777 online casino",
-    "hu777 slot games",
-    "hu777 betting app",
-    "hu777 earning app",
-
-    // LONG TAIL
-    "how to download hu777 apk",
-    "how to login hu777 account",
-    "hu777 real or fake",
-    "hu777 safe or not",
-    "hu777 app review",
-    "hu777 earning proof",
-    "hu777 bonus offers",
-    "hu777 referral code",
-
-    // INDIA SEO
-    "hu777 india",
-    "hu777 app india",
-    "best earning app india hu777",
-    "online casino india hu777",
-
-    // =========================
-    // 🔵 K123 GAME KEYWORDS
-    // =========================
-
+    // 🔵 K123 GAME
     "k123 game",
+    "k123 gameplay",
     "k123 game download",
     "k123 apk",
-    "k123 login",
-    "k123 register",
-    "k123 app download",
     "k123 earning app",
     "k123 casino",
     "k123 slot games",
-    "how to download k123 game",
-    "k123 app india",
+    "k123 game india",
     "k123 game review",
-    "k123 safe or not",
+    "k123 bonus offers",
 
-    // =========================
-    // 🟢 IN7 GAME KEYWORDS
-    // =========================
-
-    "in7 game",
-    "in7 game download",
-    "in7 apk",
-    "in7 login",
-    "in7 register",
-    "in7 app download",
-    "in7 earning app",
-    "in7 casino",
-    "in7 slot games",
-    "how to download in7 game",
-    "in7 app india",
-    "in7 game review",
-    "in7 safe or not",
-
-    // =========================
-    // 🔥 MIXED / HIGH TRAFFIC
-    // =========================
-
+    // 🔥 HIGH TRAFFIC (RELEVANT ONLY)
     "best earning app india",
-    "real money earning apps",
-    "casino apps india",
-    "online betting apps india",
-    "apk download earning apps",
+    "real money games india",
+    "online casino games india",
+    "slot earning apps",
+    "mobile casino games india",
   ],
 
   authors: [{ name: "HU777 Games" }],
@@ -189,12 +137,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Analytics />
-        <AuthProvider>
-          <Header />
-          {children}
-          <ScrollToTop />
-          <Footer />
-        </AuthProvider>
+        <Header />
+        {children}
+        <ScrollToTop />
+        <Footer />
       </body>
     </html>
   );

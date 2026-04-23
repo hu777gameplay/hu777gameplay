@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import { blogPosts, navigationLinks } from "@/lib/data";
+import { blogPosts } from "@/lib/data";
 import Link from "next/link";
+import { useState } from "react";
 
 import { Badge } from "@/components/ui/badge";
 import {

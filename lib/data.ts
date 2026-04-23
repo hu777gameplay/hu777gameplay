@@ -22,7 +22,7 @@ export interface BlogPost {
 export const siteConfig = {
   name: "HU777 Gameplay",
   description:
-    "Download HU777, K123, and IN7 games. Get APK, login guide, bonuses, and start earning with top gaming apps in India.",
+    "Explore HU777 Gameplay, BT03, and K123 games. Download APK, check bonuses, and start playing top gaming apps in India.",
   url: "https://hu777gameplay.com",
   ogImage: "/images/og-image.jpg",
   links: {
@@ -34,24 +34,26 @@ export const siteConfig = {
 // ✅ SEO PAGES
 export const pages = {
   home: {
-    title: "HU777 Gameplay | Download APK, Login & Earn Money (India)",
+    title: "HU777 Gameplay – APK Download, BT03 & K123 Games (India)",
     description:
-      "Download HU777, K123, and IN7 apps. Get APK, login guide, and start earning with top gaming apps in India.",
+      "Explore HU777 Gameplay, BT03, and K123 apps. Download APK, check features, and start playing top gaming apps in India.",
     keywords: [
       "hu777 gameplay",
-      "hu777 apk download",
-      "k123 game download",
-      "in7 game download",
-      "earning app india",
+      "hu777 gameplay apk",
+      "bt03 game",
+      "bt03 game download",
+      "k123 game",
+      "k123 gameplay",
+      "earning games india",
     ],
     url: "/",
     image: "/images/hero-banner.jpg",
   },
 
   blog: {
-    title: "HU777 Blog | APK Download, Login & Earning Tips",
+    title: "HU777 Blog | APK Download & Earning Tips",
     description:
-      "Read guides for HU777, K123, and IN7 apps including download, login help, safety review, and earning tips.",
+      "Read guides for HU777, K123, and IN7 apps including download, safety review, and earning tips.",
     keywords: ["hu777 blog", "k123 guide", "in7 tips", "apk download guide"],
     url: "/blog",
   },
@@ -64,63 +66,61 @@ export const pages = {
     url: "/apk",
   },
 
-  login: {
-    title: "HU777 Login | Secure Account Access",
-    description:
-      "Login to your HU777 account. Fix login issues and access your gaming dashboard.",
-    keywords: ["hu777 login", "hu777 account login", "hu777 login problem"],
-    url: "/login",
-  },
-
-  register: {
-    title: "Register HU777 Account | Sign Up & Bonus",
-    description:
-      "Create HU777 account and get signup bonus. Easy registration guide.",
-    keywords: ["hu777 register", "hu777 sign up", "create hu777 account"],
-    url: "/register",
-  },
+  // login and register pages removed
 
   download: {
-    title: "Download HU777, K123 & IN7 Apps",
+    title: "Download HU777 Gameplay, BT03 & K123 Apps",
     description:
-      "Download HU777, K123, and IN7 gaming apps. Get official APK links and start playing instantly.",
-    keywords: ["download hu777", "k123 game download", "in7 game download"],
+      "Download HU777 Gameplay, BT03, and K123 gaming apps with official APK links and start playing instantly.",
+    keywords: [
+      "hu777 gameplay download",
+      "bt03 game apk",
+      "k123 apk download",
+      "gaming apps india",
+    ],
     url: "/download",
   },
 
   hu777: {
-    title: "HU777 Official Website | APK, Login & Review",
+    title: "HU777 Gameplay – APK Download & Full Review",
     description:
-      "Download HU777 APK, login account, check bonus offers, and read full review.",
+      "Explore HU777 Gameplay, download APK, check features, bonus offers, and full review.",
     keywords: [
-      "hu777 official website",
-      "hu777 apk download",
-      "hu777 review",
-      "hu777 safe or not",
+      "hu777 gameplay",
+      "hu777 gameplay apk",
+      "hu777 gameplay review",
+      "hu777 gameplay bonus",
+      "hu777 gameplay india",
     ],
     url: "/hu777",
   },
 
-  // 🔥 NEW PAGES
-  k123: {
-    title: "K123 Game Download | APK, Login & Review",
+  bt03: {
+    title: "BT03 Game – Fast Access & Gameplay Guide",
     description:
-      "Download K123 game APK, login account, and explore features with full guide.",
+      "Access BT03 game, explore features, and start playing with fast entry link.",
     keywords: [
-      "k123 game",
-      "k123 apk download",
-      "k123 login",
-      "k123 earning app",
+      "bt03 game",
+      "bt03 gameplay",
+      "bt03 fast access",
+      "bt03 earning game",
+      "bt03 india",
     ],
-    url: "/k123",
+    url: "/bt03",
   },
 
-  in7: {
-    title: "IN7 Game Download | Official Link & Login Guide",
+  k123: {
+    title: "K123 Game – APK Download & Gameplay Guide",
     description:
-      "Access IN7 game official link, login guide, and APK download.",
-    keywords: ["in7 game", "in7 apk", "in7 login", "in7 game download"],
-    url: "/in7",
+      "Download K123 game APK and explore gameplay features with full guide.",
+    keywords: [
+      "k123 game",
+      "k123 gameplay",
+      "k123 apk download",
+      "k123 earning game",
+      "k123 india",
+    ],
+    url: "/k123",
   },
 
   disclaimer: {
@@ -151,16 +151,7 @@ export const blogPosts: BlogPost[] = [
     author: "HU777 Team",
     tags: ["hu777", "apk", "download"],
   },
-  {
-    slug: "hu777-login-guide-step-by-step",
-    title: "HU777 Login Guide: Easy Account Access (2026)",
-    description:
-      "Learn how to login HU777 account easily and fix login issues.",
-    content: "Full SEO content...",
-    date: "2024-03-02",
-    author: "HU777 Team",
-    tags: ["hu777", "login"],
-  },
+  // login guide blog post removed
   {
     slug: "hu777-register-account-guide",
     title: "How to Register HU777 Account (Beginner Guide)",
@@ -313,19 +304,14 @@ export const blogPosts: BlogPost[] = [
 export const navigationLinks = [
   { name: "Home", href: "/" },
   { name: "Blog", href: "/blog" },
-  { name: "Download APK", href: "/apk" },
-  { name: "HU777", href: "/hu777" },
-  { name: "K123 Game", href: "/k123" },
-  { name: "IN7 Game", href: "/in7" },
-  { name: "Login", href: "/login" },
 ];
 
-// ✅ FOOTER
 export const footerLinks = [
   { name: "Privacy Policy", href: "/privacy-policy" },
   { name: "Disclaimer", href: "/disclaimer" },
   { name: "Blog", href: "/blog" },
-  { name: "HU777", href: "/hu777" },
-  { name: "K123", href: "/k123" },
-  { name: "IN7", href: "/in7" },
+  { name: "HU777 Gameplay", href: "/hu777" },
+  { name: "BT03 Game", href: "/bt03" }, // ✅ add this page
+  { name: "K123 Game", href: "/k123" },
+  { name: "IN7 Game", href: "/in7" },
 ];

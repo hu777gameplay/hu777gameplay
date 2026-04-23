@@ -55,17 +55,7 @@ export function generateJsonLd(pageData: PageData) {
     };
   }
 
-  if (pageData.url === "/login" || pageData.url === "/register") {
-    return {
-      ...baseJsonLd,
-      "@type": "WebPage",
-      potentialAction: {
-        "@type": "RegisterAction",
-        target: `${siteConfig.url}${pageData.url}`,
-        description: pageData.description,
-      },
-    };
-  }
+  // login/register structured data removed
 
   return baseJsonLd;
 }

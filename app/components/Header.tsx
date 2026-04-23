@@ -2,15 +2,13 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { Button } from "@/components/ui/button";
 import {
   Drawer,
   DrawerClose,
   DrawerContent,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import { useAuth } from "@/lib/auth";
-import { Menu, User } from "lucide-react";
+import { Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -23,7 +21,6 @@ interface HeaderProps {
 
 export default function Header({ navigationLinks }: HeaderProps = {}) {
   const pathname = usePathname();
-  const { user } = useAuth();
 
   const defaultNavLinks = [
     { name: "Home", path: routes.HOME },
@@ -38,7 +35,7 @@ export default function Header({ navigationLinks }: HeaderProps = {}) {
     : defaultNavLinks;
 
   return (
-    <header className="w-full border-b border-gray-200 bg-white sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+    <header className="w-full border-b border-gray-200 bg-white sticky top-0 z-50 backdrop-blur supports-backdrop-filter:bg-white/80">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           {/* LOGO */}
@@ -70,7 +67,7 @@ export default function Header({ navigationLinks }: HeaderProps = {}) {
                 >
                   {item.name}
                   {isActive && (
-                    <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-yellow-500 rounded-full" />
+                    <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-yellow-500 rounded-full" />
                   )}
                 </Link>
               );
@@ -139,7 +136,7 @@ export default function Header({ navigationLinks }: HeaderProps = {}) {
                     <DrawerClose asChild>
                       <Link
                         href="https://invite.hu777.club/?code=DU7ITHS"
-                        className="block w-full text-center bg-gradient-to-r from-red-500 to-yellow-400 text-black font-bold py-4 rounded-2xl shadow-lg hover:scale-[1.02] active:scale-95 transition-all text-sm tracking-wide"
+                        className="block w-full text-center bg-linear-to-r from-red-500 to-yellow-400 text-black font-bold py-4 rounded-2xl shadow-lg hover:scale-[1.02] active:scale-95 transition-all text-sm tracking-wide"
                       >
                         🚀 Download APK
                       </Link>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Instagram } from "lucide-react";
 
 interface FooterProps {
   footerLinks?: { name: string; href: string }[];
@@ -7,21 +8,27 @@ interface FooterProps {
 const defaultFooterData = {
   disclaimer: {
     text: "does not operate betting platforms. Content is for information only. Play responsibly & comply with local laws (18+).",
-    link: "https://hu777gameplay.com/",
-    site: "https://hu777gameplay.com/",
+    link: "/disclaimer",
+    site: "https://hu777gameplay.com",
   },
   copyright: {
     year: 2026,
-    site: "https://hu777gameplay.com/",
+    site: "https://hu777gameplay.com",
+  },
+  social: {
+    instagram:
+      "https://www.instagram.com/hu777gameplay_official?igsh=MWk4ZjRoc3IyeW05bg%3D%3D",
   },
 };
 
 export default function Footer({ footerLinks }: FooterProps = {}) {
   const footerData = defaultFooterData;
+
   return (
     <footer className="w-full border-t border-border bg-bg-secondary py-10 mt-auto">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 relative">
         <div className="flex flex-col items-center text-center gap-6">
+          {/* 🔥 Disclaimer */}
           <div className="max-w-3xl">
             <p className="text-sm md:text-base text-text-secondary leading-relaxed">
               <Link
@@ -32,7 +39,7 @@ export default function Footer({ footerLinks }: FooterProps = {}) {
               </Link>
               <span className="mx-2 text-border">|</span>
               <Link
-                href={footerData.disclaimer.site}
+                href="/"
                 className="font-bold text-text-primary hover:text-accent transition-colors"
               >
                 hu777gameplay.com
@@ -43,8 +50,9 @@ export default function Footer({ footerLinks }: FooterProps = {}) {
             </p>
           </div>
 
+          {/* 🔥 Footer Links */}
           {footerLinks && footerLinks.length > 0 && (
-            <div className="flex flex-wrap justify-center gap-6 mt-6">
+            <div className="flex flex-wrap justify-center gap-6 mt-4">
               {footerLinks.map((link, index) => (
                 <Link
                   key={index}
@@ -57,22 +65,41 @@ export default function Footer({ footerLinks }: FooterProps = {}) {
             </div>
           )}
 
-          <div className="flex flex-col items-center gap-2">
+          {/* 🔥 Bottom Section */}
+          <div className="flex flex-col items-center gap-2 mt-6">
             <div className="h-[1px] w-20 bg-border mb-2" />
+
             <p className="text-xs md:text-sm text-text-secondary tracking-wide">
               © {footerData.copyright.year}{" "}
               <Link
-                href={footerData.copyright.site}
+                href="/"
                 className="font-bold text-text-primary hover:text-accent transition-colors uppercase"
               >
                 hu777gameplay.com
               </Link>
             </p>
+
             <p className="text-[10px] text-text-secondary/40 uppercase tracking-widest">
               All Rights Reserved
             </p>
           </div>
         </div>
+
+        {/* 🔥 Instagram Icon (Bottom Right Fixed) */}
+        <Link
+          href={footerData.social.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          className="absolute left-4 bottom-4 group"
+        >
+          <div className="p-2 rounded-full bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 shadow-md hover:scale-110 transition-all duration-300">
+            <Instagram
+              size={20}
+              className="text-white group-hover:rotate-6 transition-transform duration-300"
+            />
+          </div>
+        </Link>
       </div>
     </footer>
   );
