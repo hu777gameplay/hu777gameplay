@@ -77,24 +77,6 @@ export default function Header({ navigationLinks }: HeaderProps = {}) {
             })}
           </nav>
 
-          {/* DESKTOP AUTH */}
-          <div className="hidden md:flex items-center gap-3">
-            {user ? (
-              <Button asChild variant="outline" size="sm">
-                <Link href="/profile" className="flex items-center gap-2">
-                  <User className="h-4 w-4" />
-                  Profile
-                </Link>
-              </Button>
-            ) : (
-              <>
-                <Button asChild variant="outline" size="sm">
-                  <Link href="/login">Login</Link>
-                </Button>
-              </>
-            )}
-          </div>
-
           {/* MOBILE DRAWER */}
           <div className="md:hidden">
             <Drawer direction="right">
@@ -130,11 +112,6 @@ export default function Header({ navigationLinks }: HeaderProps = {}) {
 
                   {/* SCROLL AREA */}
                   <div className="flex-1 overflow-y-auto px-4 py-6">
-                    {/* NAVIGATION */}
-                    <p className="text-xs font-semibold text-gray-400 uppercase px-3 mb-3">
-                      Navigation
-                    </p>
-
                     <div className="flex flex-col gap-1">
                       {navLinks.map((item: any, index: any) => {
                         const isActive = pathname === item.path;
@@ -154,43 +131,6 @@ export default function Header({ navigationLinks }: HeaderProps = {}) {
                           </DrawerClose>
                         );
                       })}
-                    </div>
-
-                    {/* ACCOUNT */}
-                    <div className="mt-8">
-                      <p className="text-xs font-semibold text-gray-400 uppercase px-3 mb-3">
-                        Account
-                      </p>
-
-                      {user ? (
-                        <DrawerClose asChild>
-                          <Link
-                            href="/profile"
-                            className="flex items-center gap-2 px-4 py-3 rounded-xl hover:bg-gray-50 transition"
-                          >
-                            <User className="h-4 w-4" />
-                            Profile
-                          </Link>
-                        </DrawerClose>
-                      ) : (
-                        <div className="space-y-2">
-                          <DrawerClose asChild>
-                            <Button
-                              asChild
-                              variant="outline"
-                              className="w-full rounded-xl"
-                            >
-                              <Link href="/login">Login</Link>
-                            </Button>
-                          </DrawerClose>
-
-                          <DrawerClose asChild>
-                            <Button asChild className="w-full rounded-xl">
-                              <Link href="/register">Register</Link>
-                            </Button>
-                          </DrawerClose>
-                        </div>
-                      )}
                     </div>
                   </div>
 

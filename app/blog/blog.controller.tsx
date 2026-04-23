@@ -110,21 +110,6 @@ export default function BlogController() {
             </button>
           ))}
         </div>
-
-        {/* INTERNAL LINKS */}
-        <section className="text-center">
-          <h2 className="text-2xl font-bold mb-8">Explore More</h2>
-
-          <div className="grid md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-            {navigationLinks.slice(0, 4).map((link) => (
-              <Link key={link.href} href={link.href}>
-                <Card className="p-4 hover:shadow-md transition cursor-pointer">
-                  <CardTitle className="text-sm">{link.name}</CardTitle>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </section>
       </main>
     </div>
   );

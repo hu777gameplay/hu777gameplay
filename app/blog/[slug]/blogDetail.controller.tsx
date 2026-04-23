@@ -84,21 +84,6 @@ export default function BlogDetailController({
           </p>
         </header>
 
-        {/* Article Content */}
-        <article className="max-w-4xl mx-auto mb-16">
-          <div className="prose prose-lg max-w-none">
-            <div className="bg-white rounded-lg p-8 shadow-sm">
-              {post.content
-                .split("\n")
-                .map((paragraph: string, index: number) => (
-                  <p key={index} className="mb-4 text-gray-800 leading-relaxed">
-                    {paragraph}
-                  </p>
-                ))}
-            </div>
-          </div>
-        </article>
-
         {/* Share Section */}
         <section className="max-w-4xl mx-auto mb-16">
           <Card>
@@ -163,18 +148,6 @@ export default function BlogDetailController({
             </div>
           </section>
         )}
-
-        {/* Internal Links */}
-        <section className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-8">Explore More</h2>
-          <div className="grid md:grid-cols-4 gap-4">
-            {navigationLinks.slice(0, 4).map((link) => (
-              <Button key={link.href} variant="outline" asChild>
-                <Link href={link.href}>{link.name}</Link>
-              </Button>
-            ))}
-          </div>
-        </section>
       </main>
     </div>
   );
