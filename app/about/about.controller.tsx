@@ -33,10 +33,10 @@ const AboutController = () => {
             </Link>
 
             <Link
-              href="https://www.k123game.com/?inviteCode=WX4LZUS"
+              href="https://ard777.com/?inviteCode=PUEP4VN&from=web"
               className="bg-gradient-to-r from-blue-500 to-cyan-600 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all uppercase tracking-wider text-center"
             >
-              💎 Download & Play K123
+              💎 Download & Play ARD777
             </Link>
 
             <Link

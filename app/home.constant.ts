@@ -58,8 +58,8 @@ export const HERO_DATA = {
       style: "secondary",
     },
     {
-      text: "💎 Download & Play K123",
-      link: "https://www.k123game.com/?inviteCode=WX4LZUS",
+      text: "💎 Download & Play ARD777",
+      link: "https://ard777.com/?inviteCode=PUEP4VN&from=web",
       style: "accent",
     },
     {
