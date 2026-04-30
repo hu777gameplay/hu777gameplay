@@ -3,9 +3,10 @@ import { APP_DETAILS } from "../home.constant";
 import s1 from "../../public/images/s1.webp";
 import s2 from "../../public/images/s2.webp";
 import s3 from "../../public/images/s3.webp";
+import s4 from "../../public/images/hu777gameplay.jpeg";
 
 export default function AppDetailsTable() {
-  const SLIDER_IMAGES = [s1, s2, s3];
+  const SLIDER_IMAGES = [s4, s1, s2, s3];
   return (
     <>
       <div className="overflow-hidden rounded-2xl border border-border shadow-2xl">
