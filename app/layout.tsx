@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.hu777gameplay.com"),
 
   title: {
-    default: "HU777 Gameplay – APK Download, BT03 & K123 Game Guide 2026",
+    default: "HU777 Gameplay – APK Download, BT03 & ARD777 Game Guide 2026",
     template: "%s | HU777 Gameplay",
   },
 
@@ -55,17 +55,17 @@ export const metadata: Metadata = {
     "bt03 game review",
     "bt03 fast access game",
 
-    // 🔵 K123 GAME
-    "k123 game",
-    "k123 gameplay",
-    "k123 game download",
-    "k123 apk",
-    "k123 earning app",
-    "k123 casino",
-    "k123 slot games",
-    "k123 game india",
-    "k123 game review",
-    "k123 bonus offers",
+    // 🔵 ARD777 GAME
+    "ARD777 game",
+    "ARD777 gameplay",
+    "ARD777 game download",
+    "ARD777 apk",
+    "ARD777 earning app",
+    "ARD777 casino",
+    "ARD777 slot games",
+    "ARD777 game india",
+    "ARD777 game review",
+    "ARD777 bonus offers",
 
     // 🔥 HIGH TRAFFIC (RELEVANT ONLY)
     "best earning app india",

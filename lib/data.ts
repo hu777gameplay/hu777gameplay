@@ -42,8 +42,8 @@ export const pages = {
       "hu777 gameplay apk",
       "bt03 game",
       "bt03 game download",
-      "k123 game",
-      "k123 gameplay",
+      "ARD777 game",
+      "ARD777 gameplay",
       "earning games india",
     ],
     url: "/",
@@ -54,7 +54,7 @@ export const pages = {
     title: "HU777 Blog | APK Download & Earning Tips",
     description:
       "Read guides for HU777, K123, and IN7 apps including download, safety review, and earning tips.",
-    keywords: ["hu777 blog", "k123 guide", "in7 tips", "apk download guide"],
+    keywords: ["hu777 blog", "ARD777 guide", "in7 tips", "apk download guide"],
     url: "/blog",
   },
 
@@ -75,7 +75,7 @@ export const pages = {
     keywords: [
       "hu777 gameplay download",
       "bt03 game apk",
-      "k123 apk download",
+      "ARD777 apk download",
       "gaming apps india",
     ],
     url: "/download",
@@ -109,18 +109,18 @@ export const pages = {
     url: "/bt03",
   },
 
-  k123: {
+  ARD777: {
     title: "K123 Game – APK Download & Gameplay Guide",
     description:
       "Download K123 game APK and explore gameplay features with full guide.",
     keywords: [
-      "k123 game",
-      "k123 gameplay",
-      "k123 apk download",
-      "k123 earning game",
-      "k123 india",
+      "ARD777 game",
+      "ARD777 gameplay",
+      "ARD777 apk download",
+      "ARD777 earning game",
+      "ARD777 india",
     ],
-    url: "/k123",
+    url: "/ARD777",
   },
 
   disclaimer: {
@@ -214,31 +214,31 @@ export const blogPosts: BlogPost[] = [
 
   // 🔥 K123 GAME
   {
-    slug: "k123-apk-download-guide",
+    slug: "ARD777-apk-download-guide",
     title: "K123 APK Download Guide (Latest Version)",
     description: "Download K123 game APK safely and start playing.",
     content: "Full SEO content...",
     date: "2024-03-09",
     author: "HU777 Team",
-    tags: ["k123", "apk"],
+    tags: ["ARD777", "apk"],
   },
   {
-    slug: "k123-login-register-guide",
+    slug: "ARD777-login-register-guide",
     title: "K123 Login & Register Guide",
     description: "Learn how to login and register in K123 game.",
     content: "Full SEO content...",
     date: "2024-03-10",
     author: "HU777 Team",
-    tags: ["k123", "login"],
+    tags: ["ARD777", "login"],
   },
   {
-    slug: "k123-earning-app-review",
+    slug: "ARD777-earning-app-review",
     title: "K123 Game Review: Real or Fake?",
     description: "Check full K123 game review and earning proof.",
     content: "Full SEO content...",
     date: "2024-03-11",
     author: "HU777 Team",
-    tags: ["k123", "review"],
+    tags: ["ARD777", "review"],
   },
 
   // 🔥 IN7 GAME
@@ -312,6 +312,6 @@ export const footerLinks = [
   { name: "Blog", href: "/blog" },
   { name: "HU777 Gameplay", href: "/hu777" },
   { name: "BT03 Game", href: "/bt03" }, // ✅ add this page
-  { name: "K123 Game", href: "/k123" },
+  { name: "K123 Game", href: "/ARD777" },
   { name: "IN7 Game", href: "/in7" },
 ];

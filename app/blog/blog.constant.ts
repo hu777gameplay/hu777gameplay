@@ -143,7 +143,7 @@ export const blogData = [
   },
 
   {
-    slug: "k123-game-download-apk",
+    slug: "ARD777-game-download-apk",
     category: "Download",
     title: "K123 Game Download APK (Latest Version Guide)",
     author: "Admin",
@@ -155,7 +155,7 @@ export const blogData = [
   },
 
   {
-    slug: "k123-login-register-guide",
+    slug: "ARD777-login-register-guide",
     category: "Tutorial",
     title: "K123 Login & Register Guide for New Users",
     author: "Tech Support",
@@ -167,7 +167,7 @@ export const blogData = [
   },
 
   {
-    slug: "k123-real-or-fake",
+    slug: "ARD777-real-or-fake",
     category: "Review",
     title: "K123 Game Real or Fake? Honest Review 2026",
     author: "Rohan Kumar",
@@ -227,7 +227,7 @@ export const blogData = [
   },
 
   {
-    slug: "hu777-vs-k123-vs-in7",
+    slug: "hu777-vs-ARD777-vs-in7",
     category: "Comparison",
     title: "HU777 vs K123 vs IN7: Which App is Best?",
     author: "Admin",
@@ -251,7 +251,7 @@ export const blogData = [
   },
 
   {
-    slug: "k123-winning-strategies",
+    slug: "ARD777-winning-strategies",
     category: "Strategy",
     title: "Top K123 Winning Strategies for Beginners",
     author: "Game Expert",
