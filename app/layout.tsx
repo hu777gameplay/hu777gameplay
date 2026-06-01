@@ -28,6 +28,13 @@ export const metadata: Metadata = {
     "HU777 Games official guide 2026. Download HU777 APK, login, register account, bonus offers, casino games, slots, and latest updates. 100% safe guide for HU777 users.",
 
   keywords: [
+    // MAIN BRAND
+    "mygame",
+    "my game",
+    "mygame website",
+    "mygame gaming platform",
+    "mygame reviews",
+
     // 🔴 HU777 GAMEPLAY (MAIN FOCUS)
     "hu777 gameplay",
     "hu777gameplay",

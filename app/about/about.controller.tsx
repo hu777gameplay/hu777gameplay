@@ -26,10 +26,10 @@ const AboutController = () => {
 
           <div className="flex flex-col w-full max-w-sm gap-4">
             <Link
-              href="https://btg03.com/indexd1.html?invite_code=5JA2QPHM1"
+              href="https://share.mmygame.org/web/share/index.html?ic=AM0FKPTN&ts=1780332960&m=2&lang=en&id=1"
               className="bg-emerald-500 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all text-center"
             >
-              🚀 BT03 Game – Official Access Link
+              🚀 mmygame Game – Official Access Link
             </Link>
 
             <Link
@@ -40,7 +40,7 @@ const AboutController = () => {
             </Link>
 
             <Link
-              href="https://invite.hu777.club/?code=DU7ITHS"
+              href="https://invite.hu777.club/?code=HWR9C5S"
               className="bg-gradient-to-r from-orange-500 to-yellow-500 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all text-center"
             >
               👉 HU777 Club – Official APK Download

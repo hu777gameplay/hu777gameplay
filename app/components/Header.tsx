@@ -135,7 +135,7 @@ export default function Header({ navigationLinks }: HeaderProps = {}) {
                   <div className="p-5 border-t border-gray-200">
                     <DrawerClose asChild>
                       <Link
-                        href="https://invite.hu777.club/?code=DU7ITHS"
+                        href="https://invite.hu777.club/?code=HWR9C5S"
                         className="block w-full text-center bg-linear-to-r from-red-500 to-yellow-400 text-black font-bold py-4 rounded-2xl shadow-lg hover:scale-[1.02] active:scale-95 transition-all text-sm tracking-wide"
                       >
                         🚀 Download APK

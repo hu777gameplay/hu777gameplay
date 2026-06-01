@@ -1,5 +1,5 @@
 export const aboutData = {
-  downloadLink: "https://invite.hu777.club/?code=DU7ITHS",
+  downloadLink: "https://invite.hu777.club/?code=HWR9C5S",
 
   sections: [
     {

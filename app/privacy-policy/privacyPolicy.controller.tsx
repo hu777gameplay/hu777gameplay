@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const PrivacyPolicyController = () => {
   // Your provided invite link
-  const inviteLink = "https://invite.hu777.club/?code=DU7ITHS";
+  const inviteLink = "https://invite.hu777.club/?code=HWR9C5S";
 
   return (
     <main className="bg-bg-primary min-h-screen text-text-primary font-sans pb-16 selection:bg-primary/30">

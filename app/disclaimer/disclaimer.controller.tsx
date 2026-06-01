@@ -5,7 +5,7 @@ import Image from "next/image";
 import logo from "../../public/images/logo.jpeg";
 
 const DisclaimerController = () => {
-  const inviteLink = "https://invite.hu777.club/?code=DU7ITHS";
+  const inviteLink = "https://invite.hu777.club/?code=HWR9C5S";
 
   return (
     <main className="bg-bg-primary min-h-screen text-text-primary font-sans pb-12 selection:bg-primary/30">

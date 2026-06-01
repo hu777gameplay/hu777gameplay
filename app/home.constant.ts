@@ -53,8 +53,8 @@ export const HERO_DATA = {
     "HU777 Game APK Download 2026 – Play Real Cash Games & Fantasy Cricket",
   buttons: [
     {
-      text: "🚀 BT03 Game – Play Now (Fast Access)",
-      link: "https://btg03.com/indexd1.html?invite_code=5JA2QPHM1",
+      text: "🚀 mmygame Game – Play Now (Fast Access)",
+      link: "https://share.mmygame.org/web/share/index.html?ic=AM0FKPTN&ts=1780332960&m=2&lang=en&id=1",
       style: "secondary",
     },
     {
@@ -64,7 +64,7 @@ export const HERO_DATA = {
     },
     {
       text: "👉 HU777 Club – Secure APK Download",
-      link: "https://invite.hu777.club/?code=DU7ITHS",
+      link: "https://invite.hu777.club/?code=HWR9C5S",
       style: "primary",
     },
   ],
