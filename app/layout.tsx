@@ -50,6 +50,18 @@ export const metadata: Metadata = {
     "hu777 gameplay latest update",
     "hu777 gameplay review",
 
+    // IV7 BRAND
+    "iv7",
+    "iv7 game",
+    "iv7 apk",
+    "iv7 download",
+    "iv7 gameplay",
+    "iv7 app",
+    "iv7 guide",
+    "iv7 review",
+    "iv7 latest update",
+    "iv7 gaming platform",
+
     // 🟠 BT03 GAME
     "bt03 game",
     "bt03 game play",

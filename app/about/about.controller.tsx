@@ -26,10 +26,10 @@ const AboutController = () => {
 
           <div className="flex flex-col w-full max-w-sm gap-4">
             <Link
-              href="https://share.mmygame.org/web/share/index.html?ic=AM0FKPTN&ts=1780332960&m=2&lang=en&id=1"
+              href="https://share-rxapq9cajg.iv7.info/web/share/index.html?ic=AD6V4N1M&ts=1780540020&m=2&lang=en&id=1"
               className="bg-emerald-500 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all text-center"
             >
-              🚀 mmygame Game – Official Access Link
+              🚀 iv7 Game – Official Access Link
             </Link>
 
             <Link

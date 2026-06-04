@@ -53,8 +53,8 @@ export const HERO_DATA = {
     "HU777 Game APK Download 2026 – Play Real Cash Games & Fantasy Cricket",
   buttons: [
     {
-      text: "🚀 mmygame Game – Play Now (Fast Access)",
-      link: "https://share.mmygame.org/web/share/index.html?ic=AM0FKPTN&ts=1780332960&m=2&lang=en&id=1",
+      text: "🚀 iv7 Game – Play Now (Fast Access)",
+      link: "https://share-rxapq9cajg.iv7.info/web/share/index.html?ic=AD6V4N1M&ts=1780540020&m=2&lang=en&id=1",
       style: "secondary",
     },
     {

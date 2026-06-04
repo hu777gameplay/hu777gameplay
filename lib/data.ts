@@ -56,6 +56,18 @@ export const pages = {
       "mygame review",
       "mygame latest version",
 
+      // IV7 BRAND
+      "iv7",
+      "iv7 game",
+      "iv7 apk",
+      "iv7 download",
+      "iv7 gameplay",
+      "iv7 app",
+      "iv7 guide",
+      "iv7 review",
+      "iv7 latest update",
+      "iv7 gaming platform",
+
       // GAMING
       "game download",
       "apk download",
@@ -137,6 +149,17 @@ export const pages = {
       "mygame guide",
       "mygame review",
       "mygame latest version",
+      // IV7 BRAND
+      "iv7",
+      "iv7 game",
+      "iv7 apk",
+      "iv7 download",
+      "iv7 gameplay",
+      "iv7 app",
+      "iv7 guide",
+      "iv7 review",
+      "iv7 latest update",
+      "iv7 gaming platform",
 
       // GAMING
       "game download",
@@ -270,6 +293,18 @@ export const pages = {
       "ARD777 apk download",
       "ARD777 earning game",
       "ARD777 india",
+
+      // IV7 BRAND
+      "iv7",
+      "iv7 game",
+      "iv7 apk",
+      "iv7 download",
+      "iv7 gameplay",
+      "iv7 app",
+      "iv7 guide",
+      "iv7 review",
+      "iv7 latest update",
+      "iv7 gaming platform",
       // MAIN BRAND
       "mygame",
       "my game",
@@ -623,6 +658,105 @@ export const blogPosts: BlogPost[] = [
     date: "2026-01-15",
     author: "HU777 Team",
     tags: ["mygame", "tips", "gameplay"],
+  },
+  {
+    slug: "iv7-apk-download-guide",
+    title: "IV7 APK Download Guide (Latest Version 2026)",
+    description:
+      "Download IV7 APK safely and install the latest version on Android devices.",
+    content: "Full SEO content...",
+    date: "2026-02-01",
+    author: "HU777 Team",
+    tags: ["iv7", "apk", "download"],
+  },
+  {
+    slug: "iv7-login-guide",
+    title: "IV7 Login Guide (Step-by-Step)",
+    description: "Learn how to login to your IV7 account quickly and securely.",
+    content: "Full SEO content...",
+    date: "2026-02-02",
+    author: "HU777 Team",
+    tags: ["iv7", "login"],
+  },
+  {
+    slug: "iv7-registration-guide",
+    title: "IV7 Registration Guide for Beginners",
+    description:
+      "Create your IV7 account easily with this complete registration guide.",
+    content: "Full SEO content...",
+    date: "2026-02-03",
+    author: "HU777 Team",
+    tags: ["iv7", "register"],
+  },
+  {
+    slug: "iv7-review-real-or-fake",
+    title: "IV7 Review: Real or Fake?",
+    description:
+      "Explore IV7 features, gameplay, and user reviews in this detailed review.",
+    content: "Full SEO content...",
+    date: "2026-02-04",
+    author: "HU777 Team",
+    tags: ["iv7", "review"],
+  },
+  {
+    slug: "iv7-safe-or-not",
+    title: "Is IV7 Safe to Use?",
+    description:
+      "Learn about IV7 security, account safety, and platform reliability.",
+    content: "Full SEO content...",
+    date: "2026-02-05",
+    author: "HU777 Team",
+    tags: ["iv7", "security"],
+  },
+  {
+    slug: "iv7-bonus-offers-guide",
+    title: "IV7 Bonus Offers & Rewards Guide",
+    description:
+      "Discover bonuses, rewards, and promotional offers available on IV7.",
+    content: "Full SEO content...",
+    date: "2026-02-06",
+    author: "HU777 Team",
+    tags: ["iv7", "bonus"],
+  },
+  {
+    slug: "iv7-withdrawal-process",
+    title: "IV7 Withdrawal Process Explained",
+    description:
+      "Step-by-step guide for withdrawals and account transactions on IV7.",
+    content: "Full SEO content...",
+    date: "2026-02-07",
+    author: "HU777 Team",
+    tags: ["iv7", "withdrawal"],
+  },
+  {
+    slug: "iv7-latest-update",
+    title: "IV7 Latest Update & New Features",
+    description:
+      "Explore the latest IV7 updates, improvements, and platform features.",
+    content: "Full SEO content...",
+    date: "2026-02-08",
+    author: "HU777 Team",
+    tags: ["iv7", "update"],
+  },
+  {
+    slug: "iv7-gameplay-tips-and-tricks",
+    title: "IV7 Gameplay Tips & Tricks",
+    description:
+      "Improve your IV7 experience with useful gameplay strategies and tips.",
+    content: "Full SEO content...",
+    date: "2026-02-09",
+    author: "HU777 Team",
+    tags: ["iv7", "gameplay", "tips"],
+  },
+  {
+    slug: "iv7-vs-mygame-comparison",
+    title: "IV7 vs MyGame: Complete Comparison",
+    description:
+      "Compare IV7 and MyGame features, gameplay, and user experience.",
+    content: "Full SEO content...",
+    date: "2026-02-10",
+    author: "HU777 Team",
+    tags: ["iv7", "mygame", "comparison"],
   },
 ];
 
