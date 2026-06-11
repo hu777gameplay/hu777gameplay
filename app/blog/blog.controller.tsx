@@ -28,7 +28,7 @@ export default function BlogController() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 to-gray-100">
       <main className="container mx-auto px-4 py-16">
         {/* HERO */}
         <section className="text-center mb-16">

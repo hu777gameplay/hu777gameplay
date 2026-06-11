@@ -22,7 +22,7 @@ export interface BlogPost {
 export const siteConfig = {
   name: "HU777 Gameplay",
   description:
-    "Explore HU777 Gameplay, BT03, and K123 games. Download APK, check bonuses, and start playing top gaming apps in India.",
+    "Explore HU777 Gameplay, BT03, and IV7 games. Download APK, check bonuses, and start playing top gaming apps in India.",
   url: "https://hu777gameplay.com",
   ogImage: "/images/og-image.jpg",
   links: {
@@ -34,9 +34,9 @@ export const siteConfig = {
 // ✅ SEO PAGES
 export const pages = {
   home: {
-    title: "HU777 Gameplay – APK Download, BT03 & K123 Games (India)",
+    title: "HU777 Gameplay – APK Download, BT03 & IV7 Games (India)",
     description:
-      "Explore HU777 Gameplay, BT03, and K123 apps. Download APK, check features, and start playing top gaming apps in India.",
+      "Explore HU777 Gameplay, BT03, and IV7 apps. Download APK, check features, and start playing top gaming apps in India.",
     keywords: [
       "hu777 gameplay",
       "hu777 gameplay apk",
@@ -94,7 +94,7 @@ export const pages = {
   blog: {
     title: "HU777 Blog | APK Download & Earning Tips",
     description:
-      "Read guides for HU777, K123, and IN7 apps including download, safety review, and earning tips.",
+      "Read guides for HU777, IV7, and IN7 apps including download, safety review, and earning tips.",
     keywords: [
       "hu777 blog",
       "ARD777 guide",
@@ -186,9 +186,9 @@ export const pages = {
   // login and register pages removed
 
   download: {
-    title: "Download HU777 Gameplay, BT03 & K123 Apps",
+    title: "Download HU777 Gameplay, BT03 & IV7 Apps",
     description:
-      "Download HU777 Gameplay, BT03, and K123 gaming apps with official APK links and start playing instantly.",
+      "Download HU777 Gameplay, BT03, and IV7 gaming apps with official APK links and start playing instantly.",
     keywords: [
       "hu777 gameplay download",
       "bt03 game apk",
@@ -284,9 +284,9 @@ export const pages = {
   },
 
   ARD777: {
-    title: "K123 Game – APK Download & Gameplay Guide",
+    title: "IV7 Game – APK Download & Gameplay Guide",
     description:
-      "Download K123 game APK and explore gameplay features with full guide.",
+      "Download IV7 game APK and explore gameplay features with full guide.",
     keywords: [
       "ARD777 game",
       "ARD777 gameplay",
@@ -427,11 +427,11 @@ export const blogPosts: BlogPost[] = [
     tags: ["hu777", "withdraw"],
   },
 
-  // 🔥 K123 GAME
+  // 🔥 IV7 GAME
   {
     slug: "ARD777-apk-download-guide",
-    title: "K123 APK Download Guide (Latest Version)",
-    description: "Download K123 game APK safely and start playing.",
+    title: "IV7 APK Download Guide (Latest Version)",
+    description: "Download IV7 game APK safely and start playing.",
     content: "Full SEO content...",
     date: "2024-03-09",
     author: "HU777 Team",
@@ -439,8 +439,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ARD777-login-register-guide",
-    title: "K123 Login & Register Guide",
-    description: "Learn how to login and register in K123 game.",
+    title: "IV7 Login & Register Guide",
+    description: "Learn how to login and register in IV7 game.",
     content: "Full SEO content...",
     date: "2024-03-10",
     author: "HU777 Team",
@@ -448,8 +448,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ARD777-earning-app-review",
-    title: "K123 Game Review: Real or Fake?",
-    description: "Check full K123 game review and earning proof.",
+    title: "IV7 Game Review: Real or Fake?",
+    description: "Check full IV7 game review and earning proof.",
     content: "Full SEO content...",
     date: "2024-03-11",
     author: "HU777 Team",
@@ -507,7 +507,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "best-earning-apps-india-2026",
     title: "Best Earning Apps in India (2026 List)",
-    description: "Top earning apps including HU777, K123, IN7.",
+    description: "Top earning apps including HU777, IV7, IN7.",
     content: "Full SEO content...",
     date: "2024-03-17",
     author: "HU777 Team",
@@ -758,6 +758,106 @@ export const blogPosts: BlogPost[] = [
     author: "HU777 Team",
     tags: ["iv7", "mygame", "comparison"],
   },
+  // 🔥 EXTRA HU777 BLOGS
+  {
+    slug: "hu777-latest-update-2026",
+    title: "HU777 Latest Update & New Features (2026)",
+    description:
+      "Discover the latest HU777 updates, improvements, and new features.",
+    content: "Full SEO content...",
+    date: "2026-03-01",
+    author: "HU777 Team",
+    tags: ["hu777", "update"],
+  },
+  {
+    slug: "hu777-deposit-guide",
+    title: "HU777 Deposit Guide for Beginners",
+    description:
+      "Learn how to add funds to your HU777 account safely and quickly.",
+    content: "Full SEO content...",
+    date: "2026-03-02",
+    author: "HU777 Team",
+    tags: ["hu777", "deposit"],
+  },
+  {
+    slug: "hu777-referral-program-guide",
+    title: "HU777 Referral Program Guide",
+    description:
+      "Earn rewards by inviting friends through the HU777 referral system.",
+    content: "Full SEO content...",
+    date: "2026-03-03",
+    author: "HU777 Team",
+    tags: ["hu777", "referral"],
+  },
+  {
+    slug: "hu777-mobile-app-review",
+    title: "HU777 Mobile App Review (2026)",
+    description:
+      "Complete review of the HU777 mobile application and user experience.",
+    content: "Full SEO content...",
+    date: "2026-03-04",
+    author: "HU777 Team",
+    tags: ["hu777", "review", "mobile-app"],
+  },
+  {
+    slug: "hu777-customer-support-guide",
+    title: "HU777 Customer Support Guide",
+    description:
+      "Learn how to contact HU777 support and resolve account issues.",
+    content: "Full SEO content...",
+    date: "2026-03-05",
+    author: "HU777 Team",
+    tags: ["hu777", "support"],
+  },
+
+  // 🔥 EXTRA ARD777 BLOGS
+  {
+    slug: "ard777-registration-guide",
+    title: "ARD777 Registration Guide (2026)",
+    description: "Step-by-step guide to create an ARD777 account.",
+    content: "Full SEO content...",
+    date: "2026-03-06",
+    author: "HU777 Team",
+    tags: ["ard777", "register"],
+  },
+  {
+    slug: "ard777-safe-or-not",
+    title: "Is ARD777 Safe to Use?",
+    description: "Learn about ARD777 security features and user safety.",
+    content: "Full SEO content...",
+    date: "2026-03-07",
+    author: "HU777 Team",
+    tags: ["ard777", "security"],
+  },
+  {
+    slug: "ard777-bonus-rewards-guide",
+    title: "ARD777 Bonus & Rewards Guide",
+    description: "Explore ARD777 welcome bonuses, rewards, and promotions.",
+    content: "Full SEO content...",
+    date: "2026-03-08",
+    author: "HU777 Team",
+    tags: ["ard777", "bonus"],
+  },
+  {
+    slug: "ard777-withdrawal-process",
+    title: "ARD777 Withdrawal Process Explained",
+    description:
+      "Complete guide to withdrawals and account transactions on ARD777.",
+    content: "Full SEO content...",
+    date: "2026-03-09",
+    author: "HU777 Team",
+    tags: ["ard777", "withdrawal"],
+  },
+  {
+    slug: "ard777-latest-update",
+    title: "ARD777 Latest Update & New Features",
+    description:
+      "Check out the newest ARD777 updates, features, and improvements.",
+    content: "Full SEO content...",
+    date: "2026-03-10",
+    author: "HU777 Team",
+    tags: ["ard777", "update"],
+  },
 ];
 
 // ✅ NAVIGATION
@@ -772,6 +872,6 @@ export const footerLinks = [
   { name: "Blog", href: "/blog" },
   { name: "HU777 Gameplay", href: "/hu777" },
   { name: "BT03 Game", href: "/bt03" }, // ✅ add this page
-  { name: "K123 Game", href: "/ARD777" },
+  { name: "IV7 Game", href: "/ARD777" },
   { name: "IN7 Game", href: "/in7" },
 ];

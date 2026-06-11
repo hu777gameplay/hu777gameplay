@@ -145,36 +145,36 @@ export const blogData = [
   {
     slug: "ARD777-game-download-apk",
     category: "Download",
-    title: "K123 Game Download APK (Latest Version Guide)",
+    title: "IV7 Game Download APK (Latest Version Guide)",
     author: "Admin",
     date: "March 04, 2026",
-    excerpt: "Download K123 game APK safely and start playing instantly.",
+    excerpt: "Download IV7 game APK safely and start playing instantly.",
     content: `
-    <p>K123 is a fast-growing gaming platform in India.</p>
+    <p>IV7 is a fast-growing gaming platform in India.</p>
   `,
   },
 
   {
     slug: "ARD777-login-register-guide",
     category: "Tutorial",
-    title: "K123 Login & Register Guide for New Users",
+    title: "IV7 Login & Register Guide for New Users",
     author: "Tech Support",
     date: "March 05, 2026",
-    excerpt: "Complete guide to create and login to your K123 account.",
+    excerpt: "Complete guide to create and login to your IV7 account.",
     content: `
-    <p>Create your K123 account using mobile number and OTP.</p>
+    <p>Create your IV7 account using mobile number and OTP.</p>
   `,
   },
 
   {
     slug: "ARD777-real-or-fake",
     category: "Review",
-    title: "K123 Game Real or Fake? Honest Review 2026",
+    title: "IV7 Game Real or Fake? Honest Review 2026",
     author: "Rohan Kumar",
     date: "March 06, 2026",
-    excerpt: "Is K123 safe? Full review with gameplay and withdrawal proof.",
+    excerpt: "Is IV7 safe? Full review with gameplay and withdrawal proof.",
     content: `
-    <p>K123 offers multiple games and fast withdrawals.</p>
+    <p>IV7 offers multiple games and fast withdrawals.</p>
   `,
   },
 
@@ -220,7 +220,7 @@ export const blogData = [
     title: "Best Earning Apps in India 2026 (Top 5 List)",
     author: "Editorial Team",
     date: "March 10, 2026",
-    excerpt: "Discover top earning apps including HU777, K123, and IN7.",
+    excerpt: "Discover top earning apps including HU777, IV7, and IN7.",
     content: `
     <p>Here are the best real money earning apps in India.</p>
   `,
@@ -229,10 +229,10 @@ export const blogData = [
   {
     slug: "hu777-vs-ARD777-vs-in7",
     category: "Comparison",
-    title: "HU777 vs K123 vs IN7: Which App is Best?",
+    title: "HU777 vs IV7 vs IN7: Which App is Best?",
     author: "Admin",
     date: "March 11, 2026",
-    excerpt: "Compare HU777, K123, and IN7 apps to find the best one.",
+    excerpt: "Compare HU777, IV7, and IN7 apps to find the best one.",
     content: `
     <p>Each app has unique features and benefits.</p>
   `,
@@ -253,10 +253,10 @@ export const blogData = [
   {
     slug: "ARD777-winning-strategies",
     category: "Strategy",
-    title: "Top K123 Winning Strategies for Beginners",
+    title: "Top IV7 Winning Strategies for Beginners",
     author: "Game Expert",
     date: "March 13, 2026",
-    excerpt: "Improve your winning chances with K123 strategies.",
+    excerpt: "Improve your winning chances with IV7 strategies.",
     content: `
     <p>Always manage your bankroll wisely.</p>
   `,
