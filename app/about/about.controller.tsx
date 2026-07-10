@@ -33,17 +33,17 @@ const AboutController = () => {
             </Link>
 
             <Link
-              href="https://ard777.com/?inviteCode=PUEP4VN&from=web"
+              href="https://share.mmygame.org/web/share/index.html?ic=AM0FKPTN&ts=1783709160&m=2&lang=en&id=1"
               className="bg-gradient-to-r from-blue-500 to-cyan-600 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all uppercase tracking-wider text-center"
             >
-              💎 Download & Play ARD777
+              💎 Download & Play MMY
             </Link>
 
             <Link
-              href="https://invite.hu777.club/?code=HWR9C5S"
+              href="https://share-rxapq9cajg.rajluck.co/web/share/index.html?ic=AD6Y89D4&ts=1783709280&m=2&lang=en&id=1"
               className="bg-gradient-to-r from-orange-500 to-yellow-500 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-all text-center"
             >
-              👉 HU777 Club – Official APK Download
+              👉 RAJLUCK – Official APK Download
             </Link>
           </div>
         </div>

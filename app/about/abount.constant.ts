@@ -1,5 +1,6 @@
 export const aboutData = {
-  downloadLink: "https://invite.hu777.club/?code=HWR9C5S",
+  downloadLink:
+    "https://share-rxapq9cajg.rajluck.co/web/share/index.html?ic=AD6Y89D4&ts=1783709280&m=2&lang=en&id=1",
 
   sections: [
     {

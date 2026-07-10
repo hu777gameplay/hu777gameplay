@@ -143,7 +143,7 @@ export const blogData = [
   },
 
   {
-    slug: "ARD777-game-download-apk",
+    slug: "MMY-game-download-apk",
     category: "Download",
     title: "IV7 Game Download APK (Latest Version Guide)",
     author: "Admin",
@@ -155,7 +155,7 @@ export const blogData = [
   },
 
   {
-    slug: "ARD777-login-register-guide",
+    slug: "MMY-login-register-guide",
     category: "Tutorial",
     title: "IV7 Login & Register Guide for New Users",
     author: "Tech Support",
@@ -167,7 +167,7 @@ export const blogData = [
   },
 
   {
-    slug: "ARD777-real-or-fake",
+    slug: "MMY-real-or-fake",
     category: "Review",
     title: "IV7 Game Real or Fake? Honest Review 2026",
     author: "Rohan Kumar",
@@ -227,7 +227,7 @@ export const blogData = [
   },
 
   {
-    slug: "hu777-vs-ARD777-vs-in7",
+    slug: "hu777-vs-MMY-vs-in7",
     category: "Comparison",
     title: "HU777 vs IV7 vs IN7: Which App is Best?",
     author: "Admin",
@@ -251,7 +251,7 @@ export const blogData = [
   },
 
   {
-    slug: "ARD777-winning-strategies",
+    slug: "MMY-winning-strategies",
     category: "Strategy",
     title: "Top IV7 Winning Strategies for Beginners",
     author: "Game Expert",

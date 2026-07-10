@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.hu777gameplay.com"),
 
   title: {
-    default: "HU777 Gameplay – APK Download, BT03 & ARD777 Game Guide 2026",
+    default: "HU777 Gameplay – APK Download, BT03 & MMY Game Guide 2026",
     template: "%s | HU777 Gameplay",
   },
 
@@ -34,6 +34,58 @@ export const metadata: Metadata = {
     "mygame website",
     "mygame gaming platform",
     "mygame reviews",
+
+    "rajluck",
+    "rajluck game",
+    "raj luck",
+    "rajluck apk",
+    "rajluck app",
+    "rajluck download",
+    "rajluck login",
+    "rajluck register",
+    "rajluck signup",
+    "rajluck official",
+
+    // APK
+    "rajluck apk download",
+    "rajluck latest apk",
+    "rajluck android apk",
+    "rajluck app download",
+    "rajluck game download",
+    "rajluck latest version",
+    "rajluck install apk",
+
+    // Gaming
+    "rajluck rummy",
+    "rajluck casino",
+    "rajluck card game",
+    "rajluck online game",
+    "rajluck game guide",
+    "rajluck gaming platform",
+    "rajluck mobile game",
+
+    // India
+    "rajluck india",
+    "rajluck game india",
+    "rajluck online gaming",
+    "rajluck android app",
+
+    // Search Terms
+    "rajluck bonus",
+    "rajluck referral",
+    "rajluck rewards",
+    "rajluck update",
+    "rajluck news",
+    "rajluck review",
+    "rajluck latest update",
+    "rajluck app guide",
+    "rajluck how to download",
+    "rajluck how to install",
+    "rajluck registration",
+    "rajluck account login",
+    "rajluck mobile app",
+    "rajluck official website",
+    "rajluck game 2026",
 
     // 🔴 HU777 GAMEPLAY (MAIN FOCUS)
     "hu777 gameplay",
@@ -74,17 +126,17 @@ export const metadata: Metadata = {
     "bt03 game review",
     "bt03 fast access game",
 
-    // 🔵 ARD777 GAME
-    "ARD777 game",
-    "ARD777 gameplay",
-    "ARD777 game download",
-    "ARD777 apk",
-    "ARD777 earning app",
-    "ARD777 casino",
-    "ARD777 slot games",
-    "ARD777 game india",
-    "ARD777 game review",
-    "ARD777 bonus offers",
+    // 🔵 MMY GAME
+    "MMY game",
+    "MMY gameplay",
+    "MMY game download",
+    "MMY apk",
+    "MMY earning app",
+    "MMY casino",
+    "MMY slot games",
+    "MMY game india",
+    "MMY game review",
+    "MMY bonus offers",
 
     // 🔥 HIGH TRAFFIC (RELEVANT ONLY)
     "best earning app india",

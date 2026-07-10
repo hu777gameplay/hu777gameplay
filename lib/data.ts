@@ -42,9 +42,62 @@ export const pages = {
       "hu777 gameplay apk",
       "bt03 game",
       "bt03 game download",
-      "ARD777 game",
-      "ARD777 gameplay",
+      "MMY game",
+      "MMY gameplay",
       "earning games india",
+
+      "rajluck",
+      "rajluck game",
+      "raj luck",
+      "rajluck apk",
+      "rajluck app",
+      "rajluck download",
+      "rajluck login",
+      "rajluck register",
+      "rajluck signup",
+      "rajluck official",
+
+      // APK
+      "rajluck apk download",
+      "rajluck latest apk",
+      "rajluck android apk",
+      "rajluck app download",
+      "rajluck game download",
+      "rajluck latest version",
+      "rajluck install apk",
+
+      // Gaming
+      "rajluck rummy",
+      "rajluck casino",
+      "rajluck card game",
+      "rajluck online game",
+      "rajluck game guide",
+      "rajluck gaming platform",
+      "rajluck mobile game",
+
+      // India
+      "rajluck india",
+      "rajluck game india",
+      "rajluck online gaming",
+      "rajluck android app",
+
+      // Search Terms
+      "rajluck bonus",
+      "rajluck referral",
+      "rajluck rewards",
+      "rajluck update",
+      "rajluck news",
+      "rajluck review",
+      "rajluck latest update",
+      "rajluck app guide",
+      "rajluck how to download",
+      "rajluck how to install",
+      "rajluck registration",
+      "rajluck account login",
+      "rajluck mobile app",
+      "rajluck official website",
+      "rajluck game 2026",
+
       // MAIN BRAND
       "mygame",
       "my game",
@@ -97,7 +150,7 @@ export const pages = {
       "Read guides for HU777, IV7, and IN7 apps including download, safety review, and earning tips.",
     keywords: [
       "hu777 blog",
-      "ARD777 guide",
+      "MMY guide",
       "in7 tips",
       "apk download guide", // MAIN BRAND
       "mygame",
@@ -192,7 +245,7 @@ export const pages = {
     keywords: [
       "hu777 gameplay download",
       "bt03 game apk",
-      "ARD777 apk download",
+      "MMY apk download",
       "gaming apps india",
       // MAIN BRAND
       "mygame",
@@ -283,16 +336,16 @@ export const pages = {
     url: "/bt03",
   },
 
-  ARD777: {
+  MMY: {
     title: "IV7 Game – APK Download & Gameplay Guide",
     description:
       "Download IV7 game APK and explore gameplay features with full guide.",
     keywords: [
-      "ARD777 game",
-      "ARD777 gameplay",
-      "ARD777 apk download",
-      "ARD777 earning game",
-      "ARD777 india",
+      "MMY game",
+      "MMY gameplay",
+      "MMY apk download",
+      "MMY earning game",
+      "MMY india",
 
       // IV7 BRAND
       "iv7",
@@ -335,7 +388,7 @@ export const pages = {
       "latest game updates",
       "new games 2026",
     ],
-    url: "/ARD777",
+    url: "/MMY",
   },
 
   disclaimer: {
@@ -429,31 +482,31 @@ export const blogPosts: BlogPost[] = [
 
   // 🔥 IV7 GAME
   {
-    slug: "ARD777-apk-download-guide",
+    slug: "MMY-apk-download-guide",
     title: "IV7 APK Download Guide (Latest Version)",
     description: "Download IV7 game APK safely and start playing.",
     content: "Full SEO content...",
     date: "2024-03-09",
     author: "HU777 Team",
-    tags: ["ARD777", "apk"],
+    tags: ["MMY", "apk"],
   },
   {
-    slug: "ARD777-login-register-guide",
+    slug: "MMY-login-register-guide",
     title: "IV7 Login & Register Guide",
     description: "Learn how to login and register in IV7 game.",
     content: "Full SEO content...",
     date: "2024-03-10",
     author: "HU777 Team",
-    tags: ["ARD777", "login"],
+    tags: ["MMY", "login"],
   },
   {
-    slug: "ARD777-earning-app-review",
+    slug: "MMY-earning-app-review",
     title: "IV7 Game Review: Real or Fake?",
     description: "Check full IV7 game review and earning proof.",
     content: "Full SEO content...",
     date: "2024-03-11",
     author: "HU777 Team",
-    tags: ["ARD777", "review"],
+    tags: ["MMY", "review"],
   },
 
   // 🔥 IN7 GAME
@@ -810,53 +863,53 @@ export const blogPosts: BlogPost[] = [
     tags: ["hu777", "support"],
   },
 
-  // 🔥 EXTRA ARD777 BLOGS
+  // 🔥 EXTRA MMY BLOGS
   {
-    slug: "ard777-registration-guide",
-    title: "ARD777 Registration Guide (2026)",
-    description: "Step-by-step guide to create an ARD777 account.",
+    slug: "MMY-registration-guide",
+    title: "MMY Registration Guide (2026)",
+    description: "Step-by-step guide to create an MMY account.",
     content: "Full SEO content...",
     date: "2026-03-06",
     author: "HU777 Team",
-    tags: ["ard777", "register"],
+    tags: ["MMY", "register"],
   },
   {
-    slug: "ard777-safe-or-not",
-    title: "Is ARD777 Safe to Use?",
-    description: "Learn about ARD777 security features and user safety.",
+    slug: "MMY-safe-or-not",
+    title: "Is MMY Safe to Use?",
+    description: "Learn about MMY security features and user safety.",
     content: "Full SEO content...",
     date: "2026-03-07",
     author: "HU777 Team",
-    tags: ["ard777", "security"],
+    tags: ["MMY", "security"],
   },
   {
-    slug: "ard777-bonus-rewards-guide",
-    title: "ARD777 Bonus & Rewards Guide",
-    description: "Explore ARD777 welcome bonuses, rewards, and promotions.",
+    slug: "MMY-bonus-rewards-guide",
+    title: "MMY Bonus & Rewards Guide",
+    description: "Explore MMY welcome bonuses, rewards, and promotions.",
     content: "Full SEO content...",
     date: "2026-03-08",
     author: "HU777 Team",
-    tags: ["ard777", "bonus"],
+    tags: ["MMY", "bonus"],
   },
   {
-    slug: "ard777-withdrawal-process",
-    title: "ARD777 Withdrawal Process Explained",
+    slug: "MMY-withdrawal-process",
+    title: "MMY Withdrawal Process Explained",
     description:
-      "Complete guide to withdrawals and account transactions on ARD777.",
+      "Complete guide to withdrawals and account transactions on MMY.",
     content: "Full SEO content...",
     date: "2026-03-09",
     author: "HU777 Team",
-    tags: ["ard777", "withdrawal"],
+    tags: ["MMY", "withdrawal"],
   },
   {
-    slug: "ard777-latest-update",
-    title: "ARD777 Latest Update & New Features",
+    slug: "MMY-latest-update",
+    title: "MMY Latest Update & New Features",
     description:
-      "Check out the newest ARD777 updates, features, and improvements.",
+      "Check out the newest MMY updates, features, and improvements.",
     content: "Full SEO content...",
     date: "2026-03-10",
     author: "HU777 Team",
-    tags: ["ard777", "update"],
+    tags: ["MMY", "update"],
   },
 ];
 
@@ -872,6 +925,6 @@ export const footerLinks = [
   { name: "Blog", href: "/blog" },
   { name: "HU777 Gameplay", href: "/hu777" },
   { name: "BT03 Game", href: "/bt03" }, // ✅ add this page
-  { name: "IV7 Game", href: "/ARD777" },
+  { name: "IV7 Game", href: "/MMY" },
   { name: "IN7 Game", href: "/in7" },
 ];

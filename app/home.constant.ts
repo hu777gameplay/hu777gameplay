@@ -58,13 +58,13 @@ export const HERO_DATA = {
       style: "secondary",
     },
     {
-      text: "💎 Download & Play ARD777",
-      link: "https://ard777.com/?inviteCode=PUEP4VN&from=web",
+      text: "💎 Download & Play MMY",
+      link: "https://share.mmygame.org/web/share/index.html?ic=AM0FKPTN&ts=1783709160&m=2&lang=en&id=1",
       style: "accent",
     },
     {
-      text: "👉 HU777 Club – Secure APK Download",
-      link: "https://invite.hu777.club/?code=HWR9C5S",
+      text: "👉 RAJLUCK  – Secure APK Download",
+      link: "https://share-rxapq9cajg.rajluck.co/web/share/index.html?ic=AD6Y89D4&ts=1783709280&m=2&lang=en&id=1",
       style: "primary",
     },
   ],

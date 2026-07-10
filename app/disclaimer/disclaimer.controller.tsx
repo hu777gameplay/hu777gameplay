@@ -5,7 +5,8 @@ import Image from "next/image";
 import logo from "../../public/images/logo.jpeg";
 
 const DisclaimerController = () => {
-  const inviteLink = "https://invite.hu777.club/?code=HWR9C5S";
+  const inviteLink =
+    "https://share-rxapq9cajg.rajluck.co/web/share/index.html?ic=AD6Y89D4&ts=1783709280&m=2&lang=en&id=1";
 
   return (
     <main className="bg-bg-primary min-h-screen text-text-primary font-sans pb-12 selection:bg-primary/30">
@@ -25,7 +26,7 @@ const DisclaimerController = () => {
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-blue-600 to-cyan-500 text-black font-bold py-3.5 px-12 rounded-xl shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:scale-105 active:scale-95 transition-all uppercase tracking-widest text-center"
           >
-            Download HU777
+            Download RAJLUCK
           </Link>
         </div>
 
