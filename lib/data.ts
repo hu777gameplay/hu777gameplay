@@ -18,7 +18,9 @@ export interface BlogPost {
   tags: string[];
 }
 
+// ============================================================
 // ✅ SITE CONFIG
+// ============================================================
 export const siteConfig = {
   name: "HU777 Gameplay",
   description:
@@ -31,7 +33,224 @@ export const siteConfig = {
   },
 };
 
+// ============================================================
+// ✅ SHARED KEYWORD BLOCKS
+// These were previously copy-pasted into almost every page entry.
+// Centralizing them here means one edit updates every page that uses it.
+// ============================================================
+
+const MYGAME_KEYWORDS = [
+  "mygame",
+  "my game",
+  "mygame app",
+  "mygame apk",
+  "mygame download",
+  "mygame gameplay",
+  "mygame guide",
+  "mygame review",
+  "mygame latest version",
+];
+
+// -----------------------------------------------------------------------------
+// 🔹 EXPANDED BRAND KEYWORD GROUPS
+// -----------------------------------------------------------------------------
+
+export const IV7_BRAND_KEYWORDS = [
+  "iv7",
+  "iv7 game",
+  "iv7 apk",
+  "iv7 download",
+  "iv7 gameplay",
+  "iv7 app",
+  "iv7 guide",
+  "iv7 review",
+  "iv7 latest update",
+  "iv7 gaming platform",
+  "iv7 official",
+  "iv7 official app",
+  "iv7 game download",
+  "iv7 apk download",
+  "iv7 app download",
+  "iv7 latest version",
+  "iv7 install apk",
+  "iv7 login",
+  "iv7 register",
+  "iv7 signup",
+  "iv7 bonus",
+  "iv7 referral code",
+  "iv7 rewards",
+  "iv7 withdrawal",
+  "iv7 online game",
+  "iv7 earning app",
+  "iv7 game india",
+  "iv7 real or fake",
+  "iv7 customer care number",
+  "iv7 update 2026",
+];
+
+export const MMY_BRAND_KEYWORDS = [
+  "mmy",
+  "mmy game",
+  "mmy gameplay",
+  "mmy apk",
+  "mmy apk download",
+  "mmy download",
+  "mmy app",
+  "mmy app download",
+  "mmy latest version",
+  "mmy install apk",
+  "mmy login",
+  "mmy register",
+  "mmy signup",
+  "mmy account login",
+  "mmy official website",
+  "mmy guide",
+  "mmy review",
+  "mmy real or fake",
+  "mmy bonus",
+  "mmy rewards",
+  "mmy referral code",
+  "mmy withdrawal process",
+  "mmy online gaming",
+  "mmy earning app",
+  "mmy game india",
+  "mmy update 2026",
+];
+
+export const RAJLUCK_BRAND_KEYWORDS = [
+  "rajluck",
+  "rajluck game",
+  "raj luck",
+  "rajluck apk",
+  "rajluck app",
+  "rajluck download",
+  "rajluck login",
+  "rajluck register",
+  "rajluck signup",
+  "rajluck official",
+  "rajluck official website",
+  "rajluck apk download",
+  "rajluck latest apk",
+  "rajluck android apk",
+  "rajluck app download",
+  "rajluck game download",
+  "rajluck latest version",
+  "rajluck install apk",
+  "rajluck rummy",
+  "rajluck casino",
+  "rajluck card game",
+  "rajluck online game",
+  "rajluck game guide",
+  "rajluck gaming platform",
+  "rajluck mobile game",
+  "rajluck india",
+  "rajluck game india",
+  "rajluck online gaming",
+  "rajluck android app",
+  "rajluck bonus",
+  "rajluck referral",
+  "rajluck rewards",
+  "rajluck update",
+  "rajluck news",
+  "rajluck review",
+  "rajluck real or fake",
+  "rajluck latest update",
+  "rajluck app guide",
+  "rajluck how to download",
+  "rajluck how to install",
+  "rajluck registration",
+  "rajluck account login",
+  "rajluck mobile app",
+  "rajluck customer care",
+  "rajluck withdrawal proof",
+  "rajluck game 2026",
+];
+
+const GENERIC_GAMING_KEYWORDS = [
+  "game download",
+  "apk download",
+  "mobile games",
+  "android games",
+  "online games",
+  "gaming platform",
+  "gaming community",
+  "game reviews",
+  "game guides",
+  "game walkthrough",
+];
+
+const GENERIC_SEARCH_KEYWORDS = [
+  "best mobile games",
+  "top android games",
+  "gaming app india",
+  "latest game updates",
+  "new games 2026",
+];
+
+// Combination used by most inner pages (blog, apk, download, hu777, MMY)
+const COMMON_PAGE_KEYWORDS = [
+  ...MYGAME_KEYWORDS,
+  ...GENERIC_GAMING_KEYWORDS,
+  ...GENERIC_SEARCH_KEYWORDS,
+];
+
+const RAJLUCK_KEYWORDS = [
+  "rajluck",
+  "rajluck game",
+  "raj luck",
+  "rajluck apk",
+  "rajluck app",
+  "rajluck download",
+  "rajluck login",
+  "rajluck register",
+  "rajluck signup",
+  "rajluck official",
+
+  // APK
+  "rajluck apk download",
+  "rajluck latest apk",
+  "rajluck android apk",
+  "rajluck app download",
+  "rajluck game download",
+  "rajluck latest version",
+  "rajluck install apk",
+
+  // Gaming
+  "rajluck rummy",
+  "rajluck casino",
+  "rajluck card game",
+  "rajluck online game",
+  "rajluck game guide",
+  "rajluck gaming platform",
+  "rajluck mobile game",
+
+  // India
+  "rajluck india",
+  "rajluck game india",
+  "rajluck online gaming",
+  "rajluck android app",
+
+  // Search terms
+  "rajluck bonus",
+  "rajluck referral",
+  "rajluck rewards",
+  "rajluck update",
+  "rajluck news",
+  "rajluck review",
+  "rajluck latest update",
+  "rajluck app guide",
+  "rajluck how to download",
+  "rajluck how to install",
+  "rajluck registration",
+  "rajluck account login",
+  "rajluck mobile app",
+  "rajluck official website",
+  "rajluck game 2026",
+];
+
+// ============================================================
 // ✅ SEO PAGES
+// ============================================================
 export const pages = {
   home: {
     title: "HU777 Gameplay – APK Download, BT03 & IV7 Games (India)",
@@ -45,100 +264,13 @@ export const pages = {
       "MMY game",
       "MMY gameplay",
       "earning games india",
-
-      "rajluck",
-      "rajluck game",
-      "raj luck",
-      "rajluck apk",
-      "rajluck app",
-      "rajluck download",
-      "rajluck login",
-      "rajluck register",
-      "rajluck signup",
-      "rajluck official",
-
-      // APK
-      "rajluck apk download",
-      "rajluck latest apk",
-      "rajluck android apk",
-      "rajluck app download",
-      "rajluck game download",
-      "rajluck latest version",
-      "rajluck install apk",
-
-      // Gaming
-      "rajluck rummy",
-      "rajluck casino",
-      "rajluck card game",
-      "rajluck online game",
-      "rajluck game guide",
-      "rajluck gaming platform",
-      "rajluck mobile game",
-
-      // India
-      "rajluck india",
-      "rajluck game india",
-      "rajluck online gaming",
-      "rajluck android app",
-
-      // Search Terms
-      "rajluck bonus",
-      "rajluck referral",
-      "rajluck rewards",
-      "rajluck update",
-      "rajluck news",
-      "rajluck review",
-      "rajluck latest update",
-      "rajluck app guide",
-      "rajluck how to download",
-      "rajluck how to install",
-      "rajluck registration",
-      "rajluck account login",
-      "rajluck mobile app",
-      "rajluck official website",
-      "rajluck game 2026",
-
-      // MAIN BRAND
-      "mygame",
-      "my game",
-      "mygame app",
-      "mygame apk",
-      "mygame download",
-      "mygame gameplay",
-      "mygame guide",
-      "mygame review",
-      "mygame latest version",
-
-      // IV7 BRAND
-      "iv7",
-      "iv7 game",
-      "iv7 apk",
-      "iv7 download",
-      "iv7 gameplay",
-      "iv7 app",
-      "iv7 guide",
-      "iv7 review",
-      "iv7 latest update",
-      "iv7 gaming platform",
-
-      // GAMING
-      "game download",
-      "apk download",
-      "mobile games",
-      "android games",
-      "online games",
-      "gaming platform",
-      "gaming community",
-      "game reviews",
-      "game guides",
-      "game walkthrough",
-
-      // SEARCH TERMS
-      "best mobile games",
-      "top android games",
-      "gaming app india",
-      "latest game updates",
-      "new games 2026",
+      ...RAJLUCK_KEYWORDS,
+      ...MYGAME_KEYWORDS,
+      ...IV7_BRAND_KEYWORDS,
+      ...MMY_BRAND_KEYWORDS,
+      ...RAJLUCK_BRAND_KEYWORDS,
+      ...GENERIC_GAMING_KEYWORDS,
+      ...GENERIC_SEARCH_KEYWORDS,
     ],
     url: "/",
     image: "/images/hero-banner.jpg",
@@ -152,35 +284,8 @@ export const pages = {
       "hu777 blog",
       "MMY guide",
       "in7 tips",
-      "apk download guide", // MAIN BRAND
-      "mygame",
-      "my game",
-      "mygame app",
-      "mygame apk",
-      "mygame download",
-      "mygame gameplay",
-      "mygame guide",
-      "mygame review",
-      "mygame latest version",
-
-      // GAMING
-      "game download",
-      "apk download",
-      "mobile games",
-      "android games",
-      "online games",
-      "gaming platform",
-      "gaming community",
-      "game reviews",
-      "game guides",
-      "game walkthrough",
-
-      // SEARCH TERMS
-      "best mobile games",
-      "top android games",
-      "gaming app india",
-      "latest game updates",
-      "new games 2026",
+      "apk download guide",
+      ...COMMON_PAGE_KEYWORDS,
     ],
     url: "/blog",
   },
@@ -192,46 +297,13 @@ export const pages = {
     keywords: [
       "hu777 apk",
       "hu777 apk download",
-      "download hu777 app", // MAIN BRAND
-      "mygame",
-      "my game",
-      "mygame app",
-      "mygame apk",
-      "mygame download",
-      "mygame gameplay",
-      "mygame guide",
-      "mygame review",
-      "mygame latest version",
-      // IV7 BRAND
-      "iv7",
-      "iv7 game",
-      "iv7 apk",
-      "iv7 download",
-      "iv7 gameplay",
-      "iv7 app",
-      "iv7 guide",
-      "iv7 review",
-      "iv7 latest update",
-      "iv7 gaming platform",
-
-      // GAMING
-      "game download",
-      "apk download",
-      "mobile games",
-      "android games",
-      "online games",
-      "gaming platform",
-      "gaming community",
-      "game reviews",
-      "game guides",
-      "game walkthrough",
-
-      // SEARCH TERMS
-      "best mobile games",
-      "top android games",
-      "gaming app india",
-      "latest game updates",
-      "new games 2026",
+      "download hu777 app",
+      ...MYGAME_KEYWORDS,
+      ...IV7_BRAND_KEYWORDS,
+      ...MMY_BRAND_KEYWORDS,
+      ...RAJLUCK_BRAND_KEYWORDS,
+      ...GENERIC_GAMING_KEYWORDS,
+      ...GENERIC_SEARCH_KEYWORDS,
     ],
     url: "/apk",
   },
@@ -247,35 +319,7 @@ export const pages = {
       "bt03 game apk",
       "MMY apk download",
       "gaming apps india",
-      // MAIN BRAND
-      "mygame",
-      "my game",
-      "mygame app",
-      "mygame apk",
-      "mygame download",
-      "mygame gameplay",
-      "mygame guide",
-      "mygame review",
-      "mygame latest version",
-
-      // GAMING
-      "game download",
-      "apk download",
-      "mobile games",
-      "android games",
-      "online games",
-      "gaming platform",
-      "gaming community",
-      "game reviews",
-      "game guides",
-      "game walkthrough",
-
-      // SEARCH TERMS
-      "best mobile games",
-      "top android games",
-      "gaming app india",
-      "latest game updates",
-      "new games 2026",
+      ...COMMON_PAGE_KEYWORDS,
     ],
     url: "/download",
   },
@@ -289,35 +333,8 @@ export const pages = {
       "hu777 gameplay apk",
       "hu777 gameplay review",
       "hu777 gameplay bonus",
-      "hu777 gameplay india", // MAIN BRAND
-      "mygame",
-      "my game",
-      "mygame app",
-      "mygame apk",
-      "mygame download",
-      "mygame gameplay",
-      "mygame guide",
-      "mygame review",
-      "mygame latest version",
-
-      // GAMING
-      "game download",
-      "apk download",
-      "mobile games",
-      "android games",
-      "online games",
-      "gaming platform",
-      "gaming community",
-      "game reviews",
-      "game guides",
-      "game walkthrough",
-
-      // SEARCH TERMS
-      "best mobile games",
-      "top android games",
-      "gaming app india",
-      "latest game updates",
-      "new games 2026",
+      "hu777 gameplay india",
+      ...COMMON_PAGE_KEYWORDS,
     ],
     url: "/hu777",
   },
@@ -346,47 +363,12 @@ export const pages = {
       "MMY apk download",
       "MMY earning game",
       "MMY india",
-
-      // IV7 BRAND
-      "iv7",
-      "iv7 game",
-      "iv7 apk",
-      "iv7 download",
-      "iv7 gameplay",
-      "iv7 app",
-      "iv7 guide",
-      "iv7 review",
-      "iv7 latest update",
-      "iv7 gaming platform",
-      // MAIN BRAND
-      "mygame",
-      "my game",
-      "mygame app",
-      "mygame apk",
-      "mygame download",
-      "mygame gameplay",
-      "mygame guide",
-      "mygame review",
-      "mygame latest version",
-
-      // GAMING
-      "game download",
-      "apk download",
-      "mobile games",
-      "android games",
-      "online games",
-      "gaming platform",
-      "gaming community",
-      "game reviews",
-      "game guides",
-      "game walkthrough",
-
-      // SEARCH TERMS
-      "best mobile games",
-      "top android games",
-      "gaming app india",
-      "latest game updates",
-      "new games 2026",
+      ...IV7_BRAND_KEYWORDS,
+      ...MMY_BRAND_KEYWORDS,
+      ...RAJLUCK_BRAND_KEYWORDS,
+      ...MYGAME_KEYWORDS,
+      ...GENERIC_GAMING_KEYWORDS,
+      ...GENERIC_SEARCH_KEYWORDS,
     ],
     url: "/MMY",
   },
@@ -406,8 +388,222 @@ export const pages = {
   },
 } as const satisfies Record<string, PageData>;
 
+// ============================================================
 // ✅ BLOG POSTS (EXTENDED SEO)
+// Note: previously three posts were slugged "MMY-*" but titled/tagged
+// as "IV7" content — duplicates of the dedicated iv7-* series below.
+// Those mislabeled entries have been removed; the MMY-prefixed slugs
+// that remain have been normalized to lowercase for consistency.
+// ============================================================
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "hu777-app-troubleshooting-guide",
+    title: "How to Fix HU777 App Login & Crashing Issues",
+    description:
+      "Troubleshoot common HU777 app loading errors, login failures, and crash issues on Android.",
+    content: "Full SEO content...",
+    date: "2026-03-15",
+    author: "HU777 Team",
+    tags: ["hu777", "troubleshooting", "guide"],
+  },
+  {
+    slug: "hu777-vip-level-rewards",
+    title: "HU777 VIP System Explained: Unlock Higher Rewards",
+    description:
+      "Learn how the HU777 VIP tiers work and how to maximize daily login bonuses and cashback.",
+    content: "Full SEO content...",
+    date: "2026-03-16",
+    author: "HU777 Team",
+    tags: ["hu777", "vip", "rewards"],
+  },
+  {
+    slug: "hu777-vs-bt03-comparison",
+    title: "HU777 vs BT03 Game: Which App is Better in 2026?",
+    description:
+      "Detailed comparison between HU777 Gameplay and BT03 Game regarding rewards, stability, and games.",
+    content: "Full SEO content...",
+    date: "2026-03-17",
+    author: "HU777 Team",
+    tags: ["hu777", "bt03", "comparison"],
+  },
+  {
+    slug: "hu777-safe-payment-methods",
+    title: "Safe Payment & UPI Withdrawal Methods on HU777",
+    description:
+      "Overview of secure UPI, Paytm, and bank transfer options supported on the HU777 platform.",
+    content: "Full SEO content...",
+    date: "2026-03-18",
+    author: "HU777 Team",
+    tags: ["hu777", "payment", "withdraw"],
+  },
+  {
+    slug: "hu777-old-vs-new-version",
+    title: "HU777 Old Version vs New Version APK Download",
+    description:
+      "Why you should update to the latest 2026 HU777 APK version for better speed and security.",
+    content: "Full SEO content...",
+    date: "2026-03-19",
+    author: "HU777 Team",
+    tags: ["hu777", "apk", "update"],
+  },
+
+  // 🎯 BT03 GAME (4 Posts)
+  {
+    slug: "bt03-game-apk-download-guide",
+    title: "BT03 Game APK Download for Android (Latest Version)",
+    description:
+      "Step-by-step installation guide to download and setup BT03 Game APK safely.",
+    content: "Full SEO content...",
+    date: "2026-04-01",
+    author: "HU777 Team",
+    tags: ["bt03", "apk", "download"],
+  },
+  {
+    slug: "bt03-game-real-or-fake",
+    title: "BT03 Game Review: Is BT03 Real or Fake?",
+    description:
+      "Honest review of BT03 Game including user experiences, safety checks, and features.",
+    content: "Full SEO content...",
+    date: "2026-04-02",
+    author: "HU777 Team",
+    tags: ["bt03", "review", "security"],
+  },
+  {
+    slug: "bt03-game-beginner-tips",
+    title: "BT03 Game Beginner Strategy & Gameplay Tips",
+    description:
+      "Essential tips and tricks for new players getting started on the BT03 gaming platform.",
+    content: "Full SEO content...",
+    date: "2026-04-03",
+    author: "HU777 Team",
+    tags: ["bt03", "guide", "tips"],
+  },
+  {
+    slug: "bt03-withdrawal-guide",
+    title: "How to Withdraw Money from BT03 Game Fast",
+    description:
+      "Complete walkthrough on linking your account and processing withdrawals in BT03.",
+    content: "Full SEO content...",
+    date: "2026-04-04",
+    author: "HU777 Team",
+    tags: ["bt03", "withdrawal", "guide"],
+  },
+
+  // 🎯 IV7 / MMY EXTENDED (4 Posts)
+  {
+    slug: "iv7-game-rummy-color-prediction-guide",
+    title: "IV7 Game Features: Color Prediction & Card Games",
+    description:
+      "In-depth look at popular mini-games available inside the IV7 / MMY application.",
+    content: "Full SEO content...",
+    date: "2026-04-10",
+    author: "HU777 Team",
+    tags: ["iv7", "MMY", "gameplay"],
+  },
+  {
+    slug: "mmy-account-recovery-guide",
+    title: "How to Recover Lost Account or Password in MMY",
+    description:
+      "Easy steps to recover your MMY / IV7 account if you forgot your password or phone number.",
+    content: "Full SEO content...",
+    date: "2026-04-11",
+    author: "HU777 Team",
+    tags: ["MMY", "iv7", "support"],
+  },
+  {
+    slug: "iv7-apk-installation-errors-fix",
+    title: "Fix 'App Not Installed' Error on IV7 APK Download",
+    description:
+      "Quick solutions for Android permission errors when installing the IV7 APK.",
+    content: "Full SEO content...",
+    date: "2026-04-12",
+    author: "HU777 Team",
+    tags: ["iv7", "apk", "troubleshooting"],
+  },
+  {
+    slug: "mmy-referral-earning-tricks",
+    title: "How to Earn Commission via MMY Referral Links",
+    description:
+      "Maximize passive earnings by sharing your MMY invite code with friends.",
+    content: "Full SEO content...",
+    date: "2026-04-13",
+    author: "HU777 Team",
+    tags: ["MMY", "referral", "earning"],
+  },
+
+  // 🎯 RAJLUCK EXTENDED (3 Posts)
+  {
+    slug: "rajluck-game-customer-support-number",
+    title: "RajLuck Customer Support & Help Desk Guide",
+    description:
+      "How to contact official RajLuck support for deposit, login, and withdrawal assistance.",
+    content: "Full SEO content...",
+    date: "2026-05-01",
+    author: "RajLuck Team",
+    tags: ["rajluck", "support", "help"],
+  },
+  {
+    slug: "rajluck-vs-hu777-comparison",
+    title: "RajLuck vs HU777: Best Gaming App in India?",
+    description:
+      "Side-by-side comparison of RajLuck APK and HU777 APK features and user ratings.",
+    content: "Full SEO content...",
+    date: "2026-05-02",
+    author: "RajLuck Team",
+    tags: ["rajluck", "hu777", "comparison"],
+  },
+  {
+    slug: "rajluck-game-withdrawal-proof",
+    title: "RajLuck Withdrawal Time & Real Payment Proof",
+    description:
+      "Understanding payment processing times and safety verification in RajLuck.",
+    content: "Full SEO content...",
+    date: "2026-05-03",
+    author: "RajLuck Team",
+    tags: ["rajluck", "withdrawal", "proof"],
+  },
+
+  // 🎯 GENERAL GAMING / INDIA MARKET (4 Posts)
+  {
+    slug: "how-to-safely-download-third-party-apks",
+    title: "Safety Guide: How to Install Third-Party APKs Safely",
+    description:
+      "Protect your phone from malware while downloading Android gaming APKs from official sites.",
+    content: "Full SEO content...",
+    date: "2026-05-10",
+    author: "HU777 Team",
+    tags: ["apk", "security", "android"],
+  },
+  {
+    slug: "top-color-prediction-apps-india",
+    title: "Top Color Prediction Gaming Apps in India (2026)",
+    description:
+      "A roundup of popular color prediction and card gaming apps including HU777 and IV7.",
+    content: "Full SEO content...",
+    date: "2026-05-11",
+    author: "HU777 Team",
+    tags: ["gaming", "india", "reviews"],
+  },
+  {
+    slug: "responsible-gaming-tips-mobile-apps",
+    title: "Essential Responsible Gaming Tips for Mobile Players",
+    description:
+      "How to set budget limits, stay disciplined, and practice safe gaming on mobile platforms.",
+    content: "Full SEO content...",
+    date: "2026-05-12",
+    author: "HU777 Team",
+    tags: ["responsible-gaming", "guide"],
+  },
+  {
+    slug: "fastest-withdrawal-gaming-apps-2026",
+    title: "Fastest Withdrawal Gaming Apps in India (2026)",
+    description:
+      "List of top mobile gaming apps featuring instant UPI and Paytm withdrawal processing.",
+    content: "Full SEO content...",
+    date: "2026-05-13",
+    author: "HU777 Team",
+    tags: ["earning", "withdrawal", "india"],
+  },
   // 🔥 HU777 CORE
   {
     slug: "hu777-apk-download-latest-version",
@@ -419,7 +615,6 @@ export const blogPosts: BlogPost[] = [
     author: "HU777 Team",
     tags: ["hu777", "apk", "download"],
   },
-  // login guide blog post removed
   {
     slug: "hu777-register-account-guide",
     title: "How to Register HU777 Account (Beginner Guide)",
@@ -480,35 +675,6 @@ export const blogPosts: BlogPost[] = [
     tags: ["hu777", "withdraw"],
   },
 
-  // 🔥 IV7 GAME
-  {
-    slug: "MMY-apk-download-guide",
-    title: "IV7 APK Download Guide (Latest Version)",
-    description: "Download IV7 game APK safely and start playing.",
-    content: "Full SEO content...",
-    date: "2024-03-09",
-    author: "HU777 Team",
-    tags: ["MMY", "apk"],
-  },
-  {
-    slug: "MMY-login-register-guide",
-    title: "IV7 Login & Register Guide",
-    description: "Learn how to login and register in IV7 game.",
-    content: "Full SEO content...",
-    date: "2024-03-10",
-    author: "HU777 Team",
-    tags: ["MMY", "login"],
-  },
-  {
-    slug: "MMY-earning-app-review",
-    title: "IV7 Game Review: Real or Fake?",
-    description: "Check full IV7 game review and earning proof.",
-    content: "Full SEO content...",
-    date: "2024-03-11",
-    author: "HU777 Team",
-    tags: ["MMY", "review"],
-  },
-
   // 🔥 IN7 GAME
   {
     slug: "in7-apk-download-guide",
@@ -538,6 +704,7 @@ export const blogPosts: BlogPost[] = [
     tags: ["in7", "review"],
   },
 
+  // 🔥 RAJLUCK
   {
     slug: "rajluck-apk-download-latest-version",
     title: "RajLuck APK Download Latest Version (2026 Guide)",
@@ -629,126 +796,76 @@ export const blogPosts: BlogPost[] = [
     author: "RajLuck Team",
     tags: ["rajluck", "app"],
   },
-
+  // NEW: RajLuck
   {
-    slug: "mmy-apk-download",
-    title: "MMY APK Download Latest Version",
-    description: "Download the latest MMY APK for Android devices.",
+    slug: "rajluck-deposit-guide",
+    title: "RajLuck Deposit Guide for Beginners",
+    description:
+      "Learn how to add funds to your RajLuck account safely and quickly.",
     content: "Full SEO content...",
-    date: "2026-07-11",
-    author: "MMY Team",
-    tags: ["mmy", "apk"],
+    date: "2026-07-21",
+    author: "RajLuck Team",
+    tags: ["rajluck", "deposit"],
   },
   {
-    slug: "mmy-login-guide",
-    title: "How to Login to MMY Game",
-    description: "Step-by-step MMY login guide.",
+    slug: "rajluck-referral-program-guide",
+    title: "RajLuck Referral Program Guide",
+    description:
+      "Earn rewards by inviting friends through the RajLuck referral system.",
     content: "Full SEO content...",
-    date: "2026-07-12",
-    author: "MMY Team",
-    tags: ["mmy", "login"],
+    date: "2026-07-22",
+    author: "RajLuck Team",
+    tags: ["rajluck", "referral"],
   },
   {
-    slug: "mmy-register-account",
-    title: "How to Register on MMY Game",
-    description: "Create your MMY account easily.",
+    slug: "rajluck-bonus-offers-guide",
+    title: "RajLuck Bonus Offers: How to Claim Rewards",
+    description: "Get welcome bonus and daily rewards on the RajLuck platform.",
     content: "Full SEO content...",
-    date: "2026-07-13",
-    author: "MMY Team",
-    tags: ["mmy", "register"],
+    date: "2026-07-23",
+    author: "RajLuck Team",
+    tags: ["rajluck", "bonus"],
   },
   {
-    slug: "mmy-install-apk",
-    title: "How to Install MMY APK",
-    description: "Install the MMY APK on Android devices.",
+    slug: "rajluck-customer-support-guide",
+    title: "RajLuck Customer Support Guide",
+    description:
+      "Learn how to contact RajLuck support and resolve account issues.",
     content: "Full SEO content...",
-    date: "2026-07-14",
-    author: "MMY Team",
-    tags: ["mmy", "apk"],
+    date: "2026-07-24",
+    author: "RajLuck Team",
+    tags: ["rajluck", "support"],
   },
   {
-    slug: "mmy-update-app",
-    title: "How to Update MMY App",
-    description: "Keep your MMY app updated with the latest version.",
+    slug: "rajluck-safe-or-not",
+    title: "Is RajLuck Safe or Not? Security Guide",
+    description: "Understand RajLuck safety, payment system, and user trust.",
     content: "Full SEO content...",
-    date: "2026-07-15",
-    author: "MMY Team",
-    tags: ["mmy", "update"],
+    date: "2026-07-25",
+    author: "RajLuck Team",
+    tags: ["rajluck", "security"],
   },
   {
-    slug: "mmy-features-guide",
-    title: "Top Features of MMY Game",
-    description: "Explore the main features of the MMY app.",
+    slug: "rajluck-withdrawal-process",
+    title: "RajLuck Withdrawal Process: Get Money Fast",
+    description: "Step-by-step withdrawal guide for RajLuck users.",
     content: "Full SEO content...",
-    date: "2026-07-16",
-    author: "MMY Team",
-    tags: ["mmy", "features"],
+    date: "2026-07-26",
+    author: "RajLuck Team",
+    tags: ["rajluck", "withdraw"],
   },
   {
-    slug: "mmy-download-guide",
-    title: "MMY Download Guide",
-    description: "Learn how to download MMY on Android.",
+    slug: "rajluck-vs-mygame-comparison",
+    title: "RajLuck vs MyGame: Complete Comparison",
+    description:
+      "Compare RajLuck and MyGame features, gameplay, and user experience.",
     content: "Full SEO content...",
-    date: "2026-07-17",
-    author: "MMY Team",
-    tags: ["mmy", "download"],
-  },
-  {
-    slug: "mmy-beginner-guide",
-    title: "MMY Beginner Guide",
-    description: "Getting started with the MMY app.",
-    content: "Full SEO content...",
-    date: "2026-07-18",
-    author: "MMY Team",
-    tags: ["mmy", "guide"],
-  },
-  {
-    slug: "mmy-faq",
-    title: "MMY Frequently Asked Questions",
-    description: "Find answers to common MMY questions.",
-    content: "Full SEO content...",
-    date: "2026-07-19",
-    author: "MMY Team",
-    tags: ["mmy", "faq"],
-  },
-  {
-    slug: "mmy-app-overview",
-    title: "MMY App Overview",
-    description: "An overview of the MMY Android application.",
-    content: "Full SEO content...",
-    date: "2026-07-20",
-    author: "MMY Team",
-    tags: ["mmy", "overview"],
+    date: "2026-07-27",
+    author: "RajLuck Team",
+    tags: ["rajluck", "mygame", "comparison"],
   },
 
-  // 🔥 LONG-TAIL SEO (VERY IMPORTANT)
-  {
-    slug: "how-to-download-hu777-apk",
-    title: "How to Download HU777 APK (Step-by-Step)",
-    description: "Easy guide to install HU777 APK on Android.",
-    content: "Full SEO content...",
-    date: "2024-03-15",
-    author: "HU777 Team",
-    tags: ["hu777", "download"],
-  },
-  {
-    slug: "how-to-login-hu777-account",
-    title: "How to Login HU777 Account Easily",
-    description: "Step-by-step login process with screenshots.",
-    content: "Full SEO content...",
-    date: "2024-03-16",
-    author: "HU777 Team",
-    tags: ["hu777", "login"],
-  },
-  {
-    slug: "best-earning-apps-india-2026",
-    title: "Best Earning Apps in India (2026 List)",
-    description: "Top earning apps including HU777, IV7, IN7.",
-    content: "Full SEO content...",
-    date: "2024-03-17",
-    author: "HU777 Team",
-    tags: ["earning", "india"],
-  },
+  // 🔥 MYGAME
   {
     slug: "mygame-apk-download-guide",
     title: "MyGame APK Download Guide (Latest Version 2026)",
@@ -788,16 +905,6 @@ export const blogPosts: BlogPost[] = [
     date: "2026-01-04",
     author: "HU777 Team",
     tags: ["mygame", "bonus"],
-  },
-  {
-    slug: "best-mobile-games-india-2026",
-    title: "Best Mobile Games in India (2026 Edition)",
-    description:
-      "Explore the most popular mobile games, gaming apps, and trending releases in India for 2026.",
-    content: "Full SEO content...",
-    date: "2026-01-05",
-    author: "HU777 Team",
-    tags: ["gaming", "india", "mobile-games"],
   },
   {
     slug: "mygame-registration-guide",
@@ -867,6 +974,55 @@ export const blogPosts: BlogPost[] = [
     tags: ["mygame", "comparison"],
   },
   {
+    slug: "mygame-gameplay-tips-and-tricks",
+    title: "MyGame Gameplay Tips & Tricks",
+    description:
+      "Improve your gameplay with useful tips, strategies, and beginner advice.",
+    content: "Full SEO content...",
+    date: "2026-01-15",
+    author: "HU777 Team",
+    tags: ["mygame", "tips", "gameplay"],
+  },
+
+  // 🔥 GENERAL GAMING / LONG-TAIL SEO
+  {
+    slug: "how-to-download-hu777-apk",
+    title: "How to Download HU777 APK (Step-by-Step)",
+    description: "Easy guide to install HU777 APK on Android.",
+    content: "Full SEO content...",
+    date: "2024-03-15",
+    author: "HU777 Team",
+    tags: ["hu777", "download"],
+  },
+  {
+    slug: "how-to-login-hu777-account",
+    title: "How to Login HU777 Account Easily",
+    description: "Step-by-step login process with screenshots.",
+    content: "Full SEO content...",
+    date: "2024-03-16",
+    author: "HU777 Team",
+    tags: ["hu777", "login"],
+  },
+  {
+    slug: "best-earning-apps-india-2026",
+    title: "Best Earning Apps in India (2026 List)",
+    description: "Top earning apps including HU777, IV7, IN7.",
+    content: "Full SEO content...",
+    date: "2024-03-17",
+    author: "HU777 Team",
+    tags: ["earning", "india"],
+  },
+  {
+    slug: "best-mobile-games-india-2026",
+    title: "Best Mobile Games in India (2026 Edition)",
+    description:
+      "Explore the most popular mobile games, gaming apps, and trending releases in India for 2026.",
+    content: "Full SEO content...",
+    date: "2026-01-05",
+    author: "HU777 Team",
+    tags: ["gaming", "india", "mobile-games"],
+  },
+  {
     slug: "top-gaming-apps-india-2026",
     title: "Top Gaming Apps in India 2026",
     description: "Explore the most popular gaming apps and platforms in India.",
@@ -885,16 +1041,8 @@ export const blogPosts: BlogPost[] = [
     author: "HU777 Team",
     tags: ["android", "games"],
   },
-  {
-    slug: "mygame-gameplay-tips-and-tricks",
-    title: "MyGame Gameplay Tips & Tricks",
-    description:
-      "Improve your gameplay with useful tips, strategies, and beginner advice.",
-    content: "Full SEO content...",
-    date: "2026-01-15",
-    author: "HU777 Team",
-    tags: ["mygame", "tips", "gameplay"],
-  },
+
+  // 🔥 IV7
   {
     slug: "iv7-apk-download-guide",
     title: "IV7 APK Download Guide (Latest Version 2026)",
@@ -994,7 +1142,273 @@ export const blogPosts: BlogPost[] = [
     author: "HU777 Team",
     tags: ["iv7", "mygame", "comparison"],
   },
-  // 🔥 EXTRA HU777 BLOGS
+  // NEW: IV7
+  {
+    slug: "iv7-deposit-guide",
+    title: "IV7 Deposit Guide for Beginners",
+    description:
+      "Learn how to add funds to your IV7 account safely and quickly.",
+    content: "Full SEO content...",
+    date: "2026-02-11",
+    author: "HU777 Team",
+    tags: ["iv7", "deposit"],
+  },
+  {
+    slug: "iv7-referral-program-guide",
+    title: "IV7 Referral Program Guide",
+    description:
+      "Earn rewards by inviting friends through the IV7 referral system.",
+    content: "Full SEO content...",
+    date: "2026-02-12",
+    author: "HU777 Team",
+    tags: ["iv7", "referral"],
+  },
+  {
+    slug: "iv7-customer-support-guide",
+    title: "IV7 Customer Support Guide",
+    description: "Learn how to contact IV7 support and resolve account issues.",
+    content: "Full SEO content...",
+    date: "2026-02-13",
+    author: "HU777 Team",
+    tags: ["iv7", "support"],
+  },
+  {
+    slug: "iv7-mobile-app-review",
+    title: "IV7 Mobile App Review (2026)",
+    description:
+      "Complete review of the IV7 mobile application and user experience.",
+    content: "Full SEO content...",
+    date: "2026-02-14",
+    author: "HU777 Team",
+    tags: ["iv7", "review", "mobile-app"],
+  },
+  {
+    slug: "iv7-faq",
+    title: "IV7 Frequently Asked Questions",
+    description: "Answers to common questions about IV7.",
+    content: "Full SEO content...",
+    date: "2026-02-15",
+    author: "HU777 Team",
+    tags: ["iv7", "faq"],
+  },
+  {
+    slug: "iv7-app-overview",
+    title: "IV7 App Overview",
+    description: "An overview of the IV7 mobile application.",
+    content: "Full SEO content...",
+    date: "2026-02-16",
+    author: "HU777 Team",
+    tags: ["iv7", "overview"],
+  },
+  {
+    slug: "iv7-beginner-guide",
+    title: "IV7 Beginner Guide",
+    description: "Getting started with the IV7 app.",
+    content: "Full SEO content...",
+    date: "2026-02-17",
+    author: "HU777 Team",
+    tags: ["iv7", "guide"],
+  },
+
+  // 🔥 MMY
+  {
+    slug: "mmy-apk-download",
+    title: "MMY APK Download Latest Version",
+    description: "Download the latest MMY APK for Android devices.",
+    content: "Full SEO content...",
+    date: "2026-07-11",
+    author: "MMY Team",
+    tags: ["mmy", "apk"],
+  },
+  {
+    slug: "mmy-login-guide",
+    title: "How to Login to MMY Game",
+    description: "Step-by-step MMY login guide.",
+    content: "Full SEO content...",
+    date: "2026-07-12",
+    author: "MMY Team",
+    tags: ["mmy", "login"],
+  },
+  {
+    slug: "mmy-register-account",
+    title: "How to Register on MMY Game",
+    description: "Create your MMY account easily.",
+    content: "Full SEO content...",
+    date: "2026-07-13",
+    author: "MMY Team",
+    tags: ["mmy", "register"],
+  },
+  {
+    slug: "mmy-install-apk",
+    title: "How to Install MMY APK",
+    description: "Install the MMY APK on Android devices.",
+    content: "Full SEO content...",
+    date: "2026-07-14",
+    author: "MMY Team",
+    tags: ["mmy", "apk"],
+  },
+  {
+    slug: "mmy-update-app",
+    title: "How to Update MMY App",
+    description: "Keep your MMY app updated with the latest version.",
+    content: "Full SEO content...",
+    date: "2026-07-15",
+    author: "MMY Team",
+    tags: ["mmy", "update"],
+  },
+  {
+    slug: "mmy-features-guide",
+    title: "Top Features of MMY Game",
+    description: "Explore the main features of the MMY app.",
+    content: "Full SEO content...",
+    date: "2026-07-16",
+    author: "MMY Team",
+    tags: ["mmy", "features"],
+  },
+  {
+    slug: "mmy-download-guide",
+    title: "MMY Download Guide",
+    description: "Learn how to download MMY on Android.",
+    content: "Full SEO content...",
+    date: "2026-07-17",
+    author: "MMY Team",
+    tags: ["mmy", "download"],
+  },
+  {
+    slug: "mmy-beginner-guide",
+    title: "MMY Beginner Guide",
+    description: "Getting started with the MMY app.",
+    content: "Full SEO content...",
+    date: "2026-07-18",
+    author: "MMY Team",
+    tags: ["mmy", "guide"],
+  },
+  {
+    slug: "mmy-faq",
+    title: "MMY Frequently Asked Questions",
+    description: "Find answers to common MMY questions.",
+    content: "Full SEO content...",
+    date: "2026-07-19",
+    author: "MMY Team",
+    tags: ["mmy", "faq"],
+  },
+  {
+    slug: "mmy-app-overview",
+    title: "MMY App Overview",
+    description: "An overview of the MMY Android application.",
+    content: "Full SEO content...",
+    date: "2026-07-20",
+    author: "MMY Team",
+    tags: ["mmy", "overview"],
+  },
+  {
+    slug: "mmy-registration-guide",
+    title: "MMY Registration Guide (2026)",
+    description: "Step-by-step guide to create an MMY account.",
+    content: "Full SEO content...",
+    date: "2026-03-06",
+    author: "HU777 Team",
+    tags: ["mmy", "register"],
+  },
+  {
+    slug: "mmy-safe-or-not",
+    title: "Is MMY Safe to Use?",
+    description: "Learn about MMY security features and user safety.",
+    content: "Full SEO content...",
+    date: "2026-03-07",
+    author: "HU777 Team",
+    tags: ["mmy", "security"],
+  },
+  {
+    slug: "mmy-bonus-rewards-guide",
+    title: "MMY Bonus & Rewards Guide",
+    description: "Explore MMY welcome bonuses, rewards, and promotions.",
+    content: "Full SEO content...",
+    date: "2026-03-08",
+    author: "HU777 Team",
+    tags: ["mmy", "bonus"],
+  },
+  {
+    slug: "mmy-withdrawal-process",
+    title: "MMY Withdrawal Process Explained",
+    description:
+      "Complete guide to withdrawals and account transactions on MMY.",
+    content: "Full SEO content...",
+    date: "2026-03-09",
+    author: "HU777 Team",
+    tags: ["mmy", "withdrawal"],
+  },
+  {
+    slug: "mmy-latest-update",
+    title: "MMY Latest Update & New Features",
+    description:
+      "Check out the newest MMY updates, features, and improvements.",
+    content: "Full SEO content...",
+    date: "2026-03-10",
+    author: "HU777 Team",
+    tags: ["mmy", "update"],
+  },
+  // NEW: MMY
+  {
+    slug: "mmy-deposit-guide",
+    title: "MMY Deposit Guide for Beginners",
+    description:
+      "Learn how to add funds to your MMY account safely and quickly.",
+    content: "Full SEO content...",
+    date: "2026-03-11",
+    author: "HU777 Team",
+    tags: ["mmy", "deposit"],
+  },
+  {
+    slug: "mmy-referral-program-guide",
+    title: "MMY Referral Program Guide",
+    description:
+      "Earn rewards by inviting friends through the MMY referral system.",
+    content: "Full SEO content...",
+    date: "2026-03-12",
+    author: "HU777 Team",
+    tags: ["mmy", "referral"],
+  },
+  {
+    slug: "mmy-customer-support-guide",
+    title: "MMY Customer Support Guide",
+    description: "Learn how to contact MMY support and resolve account issues.",
+    content: "Full SEO content...",
+    date: "2026-03-13",
+    author: "HU777 Team",
+    tags: ["mmy", "support"],
+  },
+  {
+    slug: "mmy-mobile-app-review",
+    title: "MMY Mobile App Review (2026)",
+    description:
+      "Complete review of the MMY mobile application and user experience.",
+    content: "Full SEO content...",
+    date: "2026-03-14",
+    author: "HU777 Team",
+    tags: ["mmy", "review", "mobile-app"],
+  },
+  {
+    slug: "mmy-vs-iv7-comparison",
+    title: "MMY vs IV7: Complete Comparison",
+    description: "Compare MMY and IV7 features, gameplay, and user experience.",
+    content: "Full SEO content...",
+    date: "2026-03-15",
+    author: "HU777 Team",
+    tags: ["mmy", "iv7", "comparison"],
+  },
+  {
+    slug: "mmy-tips-and-tricks",
+    title: "MMY Gameplay Tips & Tricks",
+    description:
+      "Improve your MMY experience with useful gameplay strategies and tips.",
+    content: "Full SEO content...",
+    date: "2026-03-16",
+    author: "HU777 Team",
+    tags: ["mmy", "gameplay", "tips"],
+  },
+
+  // 🔥 HU777 EXTRAS
   {
     slug: "hu777-latest-update-2026",
     title: "HU777 Latest Update & New Features (2026)",
@@ -1045,58 +1459,8 @@ export const blogPosts: BlogPost[] = [
     author: "HU777 Team",
     tags: ["hu777", "support"],
   },
-
-  // 🔥 EXTRA MMY BLOGS
-  {
-    slug: "MMY-registration-guide",
-    title: "MMY Registration Guide (2026)",
-    description: "Step-by-step guide to create an MMY account.",
-    content: "Full SEO content...",
-    date: "2026-03-06",
-    author: "HU777 Team",
-    tags: ["MMY", "register"],
-  },
-  {
-    slug: "MMY-safe-or-not",
-    title: "Is MMY Safe to Use?",
-    description: "Learn about MMY security features and user safety.",
-    content: "Full SEO content...",
-    date: "2026-03-07",
-    author: "HU777 Team",
-    tags: ["MMY", "security"],
-  },
-  {
-    slug: "MMY-bonus-rewards-guide",
-    title: "MMY Bonus & Rewards Guide",
-    description: "Explore MMY welcome bonuses, rewards, and promotions.",
-    content: "Full SEO content...",
-    date: "2026-03-08",
-    author: "HU777 Team",
-    tags: ["MMY", "bonus"],
-  },
-  {
-    slug: "MMY-withdrawal-process",
-    title: "MMY Withdrawal Process Explained",
-    description:
-      "Complete guide to withdrawals and account transactions on MMY.",
-    content: "Full SEO content...",
-    date: "2026-03-09",
-    author: "HU777 Team",
-    tags: ["MMY", "withdrawal"],
-  },
-  {
-    slug: "MMY-latest-update",
-    title: "MMY Latest Update & New Features",
-    description:
-      "Check out the newest MMY updates, features, and improvements.",
-    content: "Full SEO content...",
-    date: "2026-03-10",
-    author: "HU777 Team",
-    tags: ["MMY", "update"],
-  },
 ];
 
-// ✅ NAVIGATION
 export const navigationLinks = [
   { name: "Home", href: "/" },
   { name: "Blog", href: "/blog" },
@@ -1107,7 +1471,7 @@ export const footerLinks = [
   { name: "Disclaimer", href: "/disclaimer" },
   { name: "Blog", href: "/blog" },
   { name: "HU777 Gameplay", href: "/hu777" },
-  { name: "BT03 Game", href: "/bt03" }, // ✅ add this page
+  { name: "BT03 Game", href: "/bt03" },
   { name: "IV7 Game", href: "/MMY" },
-  { name: "IN7 Game", href: "/in7" },
+  { name: "IN7 Game", href: "/in7" }, // ⚠ no matching entry in `pages` — add one or remove this link
 ];

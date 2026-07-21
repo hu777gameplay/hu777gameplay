@@ -1,44 +1,9 @@
 import { privacyData } from "./privacyPolicy.constant";
-import Image from "next/image";
-import promoImg from "../../public/images/promo.jpg";
-import Link from "next/link";
 
 const PrivacyPolicyController = () => {
-  // Your provided invite link
-  const inviteLink =
-    "https://share-rxapq9cajg.rajluck.co/web/share/index.html?ic=AD6Y89D4&ts=1783709280&m=2&lang=en&id=1";
-
   return (
     <main className="bg-bg-primary min-h-screen text-text-primary font-sans pb-16 selection:bg-primary/30">
       <div className="max-w-4xl mx-auto px-4 py-10">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-10 text-black uppercase tracking-tighter drop-shadow-sm">
-          Privacy Policy – HU777 APK DOWNLOAD
-        </h1>
-
-        <div className="flex justify-center mb-12">
-          <div className="bg-primary/10 p-4 rounded-[2.5rem] border border-primary/20 inline-block shadow-2xl transition-transform hover:scale-[1.02] duration-500">
-            <div className="relative w-72 h-[480px] bg-bg-card border-2 border-accent/40 rounded-[2rem] overflow-hidden shadow-inner">
-              <Image
-                src={promoImg}
-                alt="HU777 Game Welfare Feast Promo"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="flex justify-center mb-12">
-          <Link
-            href={inviteLink}
-            rel="noopener noreferrer"
-            className="bg-gradient-to-r from-cyan-500 to-blue-600 text-black font-black py-4 px-12 rounded-xl shadow-[0_10px_20px_rgba(6,182,212,0.3)] hover:shadow-[0_15px_30px_rgba(6,182,212,0.4)] hover:-translate-y-1 active:translate-y-0 transition-all uppercase tracking-widest text-sm text-center"
-          >
-            DOWNLOAD NOW
-          </Link>
-        </div>
-
         <div className="bg-bg-card border border-border rounded-2xl p-8 mb-10 shadow-xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 blur-3xl rounded-full"></div>
 
@@ -120,27 +85,6 @@ const PrivacyPolicyController = () => {
             </section>
           ))}
         </div>
-
-        <footer className="mt-16 bg-bg-card p-8 rounded-2xl border border-border shadow-2xl relative">
-          <h3 className="font-black mb-6 text-black border-b border-border pb-3 uppercase text-xs tracking-[0.2em]">
-            Quick Navigation
-          </h3>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-5 text-sm text-accent">
-            {privacyData.internalLinks.map((link, index) => (
-              <li key={index}>
-                <Link
-                  href={link.url}
-                  className="hover:text-primary transition-all flex items-center gap-3 group/link"
-                >
-                  <span className="text-[10px] group-hover/link:translate-x-1 transition-transform">
-                    ▶
-                  </span>
-                  <span className="font-bold tracking-wide">{link.label}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </footer>
       </div>
     </main>
   );
